@@ -1,0 +1,68 @@
+.form {
+
+}
+
+.form__fieldset {
+  border: none;
+}
+
+.form__fieldset-name {
+  @include fz-lh(17px, 16px);
+  color: $color-main-green;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.form__radio-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__checkbox-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.form__radio-item {
+
+}
+
+.form__checkbox-item {
+
+}
+
+.form__radio-input {
+
+}
+
+.form__checkbox-input {
+
+}
+
+.form__text-input {
+
+}
+
+.form__label {
+  @include fz-lh(17px, 18px);
+  font-weight: 700;
+
+  &--radio {
+
+  }
+
+  &--checkbox {
+
+  }
+}
+
+.form__details {
+  @include fz-lh(14px, 16px);
+  color: $color-basic-text;
+}
+
+.form__button {
+
+}

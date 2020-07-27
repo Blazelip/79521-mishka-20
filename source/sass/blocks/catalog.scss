@@ -1,0 +1,19 @@
+.catalog {
+  margin-bottom: 30px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+  outline: 3px solid tomato;
+  outline-offset: -3px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,10 @@
+.main-title {
+  margin: 0;
+
+  @include fz-lh(27px, 30px);
+  font-weight: 700;
+  text-align: center;
+
+  outline: 3px solid tomato;
+  outline-offset: -3px;
+}

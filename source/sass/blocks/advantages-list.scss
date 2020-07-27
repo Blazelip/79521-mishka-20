@@ -1,0 +1,17 @@
+.advantages-list {
+  margin: 0;
+  padding: 0;
+
+  @include fz-lh(17px, 20px);
+  font-weight: bold;
+  list-style: none;
+}
+
+.advantages-list__item {
+  padding-top: 54px;
+  margin-bottom: 32px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

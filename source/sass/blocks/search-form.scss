@@ -1,0 +1,22 @@
+.search-form {
+
+}
+
+.search-form__field {
+  padding: 0;
+
+  border: none;
+  background-color: transparent;
+
+  &::placeholder {
+    @include fz-lh(17px, 24px);
+    font-weight: 700;
+    color: $color-title-text;
+  }
+
+}
+
+// .search-form__submit {
+//   border: none;
+//   background-color: transparent;
+// }

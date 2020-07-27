@@ -1,0 +1,10 @@
+.order {
+  margin-bottom: 55px;
+}
+
+.order__description {
+  margin: 0;
+  margin-bottom: 29px;
+  @include fz-lh(13px, 24px);
+  color: $color-basic-text;
+}
