@@ -16,6 +16,7 @@
 
 .product__title {
   margin: 0;
+
   @include fz-lh(17px, 24px);
   font-weight: 700;
   color: $color-title-text;
@@ -24,7 +25,8 @@
 .product__info {
   margin: 0;
   padding-bottom: 17.5px;
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
+
   @include fz-lh(13px, 30px);
   color: $color-basic-text;
 }
@@ -35,6 +37,7 @@
 
 .product__price {
   margin: 0;
+
   @include fz-lh(15px, 24px);
   font-weight: 700;
 }

@@ -13,12 +13,14 @@
 
 .best-offer__subtitle {
   margin: 0;
+
   @include fz-lh(17px, 20px);
   font-weight: 700;
 }
 
 .best-offer__description {
   margin: 0;
+
   @include fz-lh(15px, 24px);
   margin-bottom: 28px;
 }
@@ -34,6 +36,7 @@
 .best-offer__price {
   margin: 0;
   margin-bottom: 24.5px;
+
   @include fz-lh(17px, 24px);
   font-weight: bold;
   text-align: center;
