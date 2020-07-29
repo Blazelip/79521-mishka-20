@@ -1,0 +1,47 @@
+.best-offer {
+  margin-bottom: 31px;
+  padding-bottom: 36px;
+}
+
+.best-offer__header {
+  margin-bottom: 17.5px;
+}
+
+.best-offer__title {
+  margin-bottom: 3.5px;
+}
+
+.best-offer__subtitle {
+  margin: 0;
+
+  @include fz-lh(17px, 20px);
+  font-weight: 700;
+}
+
+.best-offer__description {
+  margin: 0;
+
+  @include fz-lh(15px, 24px);
+  margin-bottom: 28px;
+}
+
+.best-offer__features {
+  margin-bottom: 28px;
+}
+
+.best-offer__image {
+  margin-bottom: 25.5px;
+}
+
+.best-offer__price {
+  margin: 0;
+  margin-bottom: 24.5px;
+
+  @include fz-lh(17px, 24px);
+  font-weight: bold;
+  text-align: center;
+}
+
+.best-offer__button {
+
+}

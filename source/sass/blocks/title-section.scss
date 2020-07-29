@@ -1,0 +1,10 @@
+.title-section {
+  padding: 73px 0;
+  background-color: $color-background-grey;
+  background-repeat: no-repeat;
+
+  &--index {
+    padding-bottom: 120px;
+    background-image: url("../../img/hero-desktop@1x.jpg");
+  }
+}

@@ -6,11 +6,12 @@
   <meta name="keyowrds" content="Какие-то ключевые слова через запятую">
   <meta name="description" content="Какое-то описание сайта">
   <title>Каталог товаров</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page-body">
   <header class="main-header">
-    <div class="main-header__wrapper">
+    <div class="main-header__wrapper wrapper">
       <nav class="main-navigation">
         <a class="main-navigation__logo" href="index.html">
           <img src="https://via.placeholder.com/150x150"" width="86" height="35" alt="Логотип интернет-магазина Mishka">
@@ -20,10 +21,10 @@
 
         <ul class="main-navigation_site-nav site-navigation">
           <li class="site-navigation__item">
-            <a href="#">Каталог товаров</a>
+            <a class="site-navigation__link" href="#">Каталог товаров</a>
           </li>
           <li class="site-navigation__item">
-            <a href="#">Вязание на заказ</a>
+            <a class="site-navigation__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-navigation__item">
             <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
@@ -34,7 +35,7 @@
             </form>
           </li>
           <li class="site-navigation__item">
-            <a href="#">Корзина: пока пуста</a>
+            <a class="site-navigation__link" href="#">Корзина: пока пуста</a>
           </li>
         </ul>
       </nav>
@@ -42,65 +43,69 @@
   </header>
 
   <main>
-    <h1 class="main-title">Каталог товаров</h1>
+    <section class="title-section">
+      <div class="wrapper">
+        <h1 class="main-title">Каталог товаров</h1>
+      </div>
+    </section>
 
     <section class="catalog">
       <h2 class="visually-hidden">Каталог товаров</h2>
 
-      <ul class="product-list">
-        <li class="product-list__item">
-          <article class="product-item">
-            <a href="" class="product-item__image-link">
-              <img class="product-item__image" src="https://via.placeholder.com/150x150"" alt="Зайчик-попрыгайчик" width="260" height="195">
+      <ul class="catalog__list">
+        <li class="catalog__item">
+          <article class="product">
+            <a href="" class="product__image-link">
+              <img class="product__image" src="https://via.placeholder.com/150x150"" alt="Зайчик-попрыгайчик" width="260" height="195">
             </a>
 
-            <a href="" class="product-item__title-link">
-              <h3 class="product-item__title">Зайчик-попрыгайчик</h3>
+            <a href="" class="product__title-link">
+              <h3 class="product__title">Зайчик-попрыгайчик</h3>
             </a>
 
-            <p class="product-item__info">Рост 30 см, вес 200 г</p>
+            <p class="product__info">Рост 30 см, вес 200 г</p>
 
-            <div class="product-item__purchase-menu">
-              <p class="product-item__price">1 200 руб.</p>
-              <button class="product-item__cart-button" type="button" aria-label="Положить в корзину"></button>
+            <div class="product__purchase-menu">
+              <p class="product__price">1 200 руб.</p>
+              <button class="product__cart-button" type="button" aria-label="Положить в корзину"></button>
             </div>
           </article>
         </li>
 
-        <li class="product-list__item">
-          <article class="product-item">
-            <a href="" class="product-item__image-link">
-              <img class="product-item__image" src="https://via.placeholder.com/150x150"" alt="Корзинка для белья" width="260" height="195">
+        <li class="catalog__item">
+          <article class="product">
+            <a href="" class="product__image-link">
+              <img class="product__image" src="https://via.placeholder.com/150x150"" alt="Корзинка для белья" width="260" height="195">
             </a>
 
-            <a href="" class="product-item__title-link">
-              <h3 class="product-item__title">Корзинка для белья</h3>
+            <a href="" class="product__title-link">
+              <h3 class="product__title">Корзинка для белья</h3>
             </a>
 
-            <p class="product-item__info">Диаметр 15 см, высота 10 см</p>
+            <p class="product__info">Диаметр 15 см, высота 10 см</p>
 
-            <div class="product-item__purchase-menu">
-              <p class="product-item__price">690 руб.</p>
-              <button class="product-item__cart-button" type="button" aria-label="Положить в корзину"></button>
+            <div class="product__purchase-menu">
+              <p class="product__price">690 руб.</p>
+              <button class="product__cart-button" type="button" aria-label="Положить в корзину"></button>
             </div>
           </article>
         </li>
 
-        <li class="product-list__item">
-          <article class="product-item">
-            <a href="" class="product-item__image-link">
-              <img class="product-item__image" src="https://via.placeholder.com/150x150" alt="Большая корзинка для игрушек" width="260" height="195">
+        <li class="catalog__item">
+          <article class="product">
+            <a href="" class="product__image-link">
+              <img class="product__image" src="https://via.placeholder.com/150x150" alt="Большая корзинка для игрушек" width="260" height="195">
             </a>
 
-            <a href="" class="product-item__title-link">
-              <h3 class="product-item__title">Большая корзинка для игрушек</h3>
+            <a href="" class="product__title-link">
+              <h3 class="product__title">Большая корзинка для игрушек</h3>
             </a>
 
-            <p class="product-item__info">Диаметр 30 см, высота 30 см</p>
+            <p class="product__info">Диаметр 30 см, высота 30 см</p>
 
-            <div class="product-item__purchase-menu">
-              <p class="product-item__price">1 500 руб.</p>
-              <button class="product-item__cart-button" type="button" aria-label="Положить в корзину"></button>
+            <div class="product__purchase-menu">
+              <p class="product__price">1 500 руб.</p>
+              <button class="product__cart-button" type="button" aria-label="Положить в корзину"></button>
             </div>
           </article>
         </li>
@@ -115,7 +120,7 @@
       </div>
 
       <p class="producing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="producing__button button" href="#">Сделать заказ</button>
+      <a class="producing__button button" href="#">Сделать заказ</a>
     </section>
 
   </main>

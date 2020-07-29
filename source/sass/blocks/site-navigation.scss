@@ -1,0 +1,20 @@
+.site-navigation {
+  margin: 0;
+  padding: 0;
+
+  font-size: 17px;
+  line-height: 24px;
+
+  list-style: none;
+  outline: 3px solid rgba(255, 50, 0, 0.5);
+  outline-offset: -3px;
+}
+
+.site-navigation__item {
+
+}
+
+.site-navigation__link {
+  color: $color-title-text;
+  font-weight: 700;
+}

@@ -1,0 +1,32 @@
+.catalog-menu {
+  @include fz-lh(19px, 24px);
+  margin-bottom: 31px;
+}
+
+.catalog-menu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-menu__item {
+  padding: 24px 0 31px;
+
+  background-repeat: no-repeat;
+
+  &--light-green {
+    background-color: $color-main-green;
+    background-image: url("../../img/icon-interior.svg");
+    background-position: 0 0;
+  }
+
+  &--dark-green {
+    background-color: $color-secondary-green;
+    background-image: url("../../img/icon-toy.svg");
+    background-position: 0 0;
+  }
+}
+
+.catalog-menu__item > a {
+  color: $color-white-text;
+}
