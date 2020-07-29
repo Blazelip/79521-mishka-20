@@ -19,7 +19,7 @@
 
   @include fz-lh(17px, 24px);
   font-weight: 700;
-  color: $color-title-text;
+  color: $text-heading;
 }
 
 .product__info {
@@ -28,7 +28,7 @@
   border-bottom: 1px solid #ececec;
 
   @include fz-lh(13px, 30px);
-  color: $color-basic-text;
+  color: $text-basic;
 }
 
 .product__purchase-menu {

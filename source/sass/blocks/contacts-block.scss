@@ -1,0 +1,21 @@
+.contacts-block {
+  @include fz-lh(15px, 30px);
+  color: $text-basic;
+
+  outline: 3px solid tomato;
+  outline-offest: -3px;
+}
+
+.contacts-block__key {
+
+}
+
+.contacts-block__value {
+  font-style: normal;
+
+  &--email-underline {
+    color: $text-basic;
+    text-decoration: underline;
+    text-decoration-color: #62d1ba;
+  }
+}

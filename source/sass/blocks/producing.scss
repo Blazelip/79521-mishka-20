@@ -1,0 +1,26 @@
+.producing {
+  border: 1px solid #ececec;
+}
+
+.producing__title {
+  margin: 0;
+
+  @include fz-lh(17px, 24px);
+  font-weight: 700;
+}
+
+.producing__video {
+  margin-bottom: 35px;
+}
+
+.producing__description {
+  margin: 0;
+  margin-bottom: 41px;
+
+  @include fz-lh(13px, 24px);
+  color: $text-basic;
+}
+
+.producing__button {
+  margin-bottom: 33px;
+}

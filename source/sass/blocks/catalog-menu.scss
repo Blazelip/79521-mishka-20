@@ -10,23 +10,23 @@
 }
 
 .catalog-menu__item {
-  padding: 24px 0 31px;
-
   background-repeat: no-repeat;
 
   &--light-green {
-    background-color: $color-main-green;
-    background-image: url("../../img/icon-interior.svg");
+    background-color: $green;
+    background-image: url("../img/icon-interior.svg");
     background-position: 0 0;
   }
 
   &--dark-green {
-    background-color: $color-secondary-green;
-    background-image: url("../../img/icon-toy.svg");
+    background-color: $green--darken;
+    background-image: url("../img/icon-toy.svg");
     background-position: 0 0;
   }
 }
 
-.catalog-menu__item > a {
-  color: $color-white-text;
+.catalog-menu__link {
+  display: block;
+  padding: 24px 0 31px;
+  color: $white;
 }

@@ -8,7 +8,7 @@
 
 .form__fieldset-name {
   @include fz-lh(17px, 16px);
-  color: $color-main-green;
+  color: $green;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -42,7 +42,12 @@
 }
 
 .form__text-input {
+  padding: 0;
 
+  &::placeholder {
+    @include fz-lh(17px, 18px);
+    opacity: 0.3;
+  }
 }
 
 .form__label {
@@ -60,7 +65,7 @@
 
 .form__details {
   @include fz-lh(14px, 16px);
-  color: $color-basic-text;
+  color: $text-basic;
 }
 
 .form__button {
