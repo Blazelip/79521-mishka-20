@@ -11,7 +11,7 @@
   &::placeholder {
     @include fz-lh(17px, 24px);
     font-weight: 700;
-    color: $color-title-text;
+    color: $text-heading;
   }
 }
 
