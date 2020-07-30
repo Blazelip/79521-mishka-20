@@ -55,6 +55,11 @@
     opacity: 0.3;
   }
 
+  &:focus {
+    outline: none;
+    border-color: #62d1ba;
+  }
+
   &--textarea {
     border: 2px solid $input-border-color;
   }
