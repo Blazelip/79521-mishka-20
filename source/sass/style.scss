@@ -1,12 +1,17 @@
-@import "normalize.scss";
-@import "fonts.scss";
-@import "variables.scss";
-@import "mixins.scss";
+// SETTINGS
+
+@import "settings/normalize.scss";
+@import "settings/fonts.scss";
+@import "settings/variables.scss";
+@import "settings/mixins.scss";
+@import "settings/global.scss";
 
 // GLOBAL
 
-@import "global.scss";
 @import "blocks/page-body.scss";
+@import "blocks/wrapper.scss";
+@import "blocks/visually-hidden.scss";
+@import "blocks/list.scss";
 @import "blocks/button.scss";
 
 // HEADER
@@ -20,11 +25,11 @@
 @import "blocks/title-section.scss";
 @import "blocks/main-title.scss";
 @import "blocks/catalog-menu.scss";
-@import "blocks/section-title.scss";
+@import "blocks/title.scss";
 @import "blocks/best-offer.scss";
 @import "blocks/features-table.scss";
 @import "blocks/about.scss";
-@import "blocks/advantages-list.scss";
+@import "blocks/advantages.scss";
 @import "blocks/feedback.scss";
 @import "blocks/slider.scss";
 @import "blocks/contacts.scss";

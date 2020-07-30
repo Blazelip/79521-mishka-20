@@ -11,24 +11,29 @@
 }
 
 .product__title-link {
+  @include fz-lh(17px, 24px);
+
   display: block;
+
+  color: $text-heading;
+  font-weight: 700;
 }
 
 .product__title {
-  margin: 0;
-
   @include fz-lh(17px, 24px);
-  font-weight: 700;
-  color: $text-heading;
+
+  margin: 0;
 }
 
 .product__info {
+  @include fz-lh(13px, 30px);
+
   margin: 0;
   padding-bottom: 17.5px;
-  border-bottom: 1px solid #ececec;
 
-  @include fz-lh(13px, 30px);
   color: $text-basic;
+
+  border-bottom: 1px solid #ececec;
 }
 
 .product__purchase-menu {
@@ -36,9 +41,10 @@
 }
 
 .product__price {
+  @include fz-lh(15px, 24px);
+
   margin: 0;
 
-  @include fz-lh(15px, 24px);
   font-weight: 700;
 }
 

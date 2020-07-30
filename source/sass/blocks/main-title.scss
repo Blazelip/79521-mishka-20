@@ -1,7 +1,8 @@
 .main-title {
+  @include fz-lh(27px, 30px);
+
   margin: 0;
 
-  @include fz-lh(27px, 30px);
   font-weight: 700;
   text-align: center;
 

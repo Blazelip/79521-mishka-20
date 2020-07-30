@@ -8,21 +8,18 @@
 
 .form__fieldset-name {
   @include fz-lh(17px, 16px);
+
   color: $green;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 .form__radio-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
 }
 
 .form__checkbox-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+
 }
 
 .form__radio-item {
@@ -33,25 +30,39 @@
 
 }
 
-.form__radio-input {
+.form__radio {
 
 }
 
-.form__checkbox-input {
+.form__checkbox {
 
 }
 
 .form__text-input {
+  @include fz-lh(17px, 18px);
+
   padding: 0;
+
+  font: inherit;
+  color: $input-text-color;
+
+  border: none;
+  border-bottom: 2px solid $input-border-color;
 
   &::placeholder {
     @include fz-lh(17px, 18px);
+
     opacity: 0.3;
+  }
+
+  &--textarea {
+    border: 2px solid $input-border-color;
   }
 }
 
 .form__label {
   @include fz-lh(17px, 18px);
+
   font-weight: 700;
 
   &--radio {
@@ -65,6 +76,7 @@
 
 .form__details {
   @include fz-lh(14px, 16px);
+
   color: $text-basic;
 }
 

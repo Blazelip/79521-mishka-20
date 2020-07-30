@@ -3,9 +3,10 @@
 }
 
 .producing__title {
+  @include fz-lh(17px, 24px);
+
   margin: 0;
 
-  @include fz-lh(17px, 24px);
   font-weight: 700;
 }
 
@@ -13,11 +14,20 @@
   margin-bottom: 35px;
 }
 
+.producing__play-video {
+
+}
+
+.producing__preview {
+
+}
+
 .producing__description {
+  @include fz-lh(13px, 24px);
+
   margin: 0;
   margin-bottom: 41px;
 
-  @include fz-lh(13px, 24px);
   color: $text-basic;
 }
 
