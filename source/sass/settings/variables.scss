@@ -8,7 +8,12 @@ $text-basic: $grey;
 $text-heading: $black;
 $button-border-color: $grey;
 $color-background-grey: #f1f1f1;
-$input-border-color: $grey;
-$input-text-color: $grey;
+
+$input-placeholder-color-mobile: $black;
+$input-placeholder-color-pc: $grey;
+$input-text-color-pc: $grey;
+
+$input-border-color: $black;
+
 
 $default-font: "Open Sans", "Arial", sans-serif;
