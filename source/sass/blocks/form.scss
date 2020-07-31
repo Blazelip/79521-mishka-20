@@ -46,6 +46,7 @@
   font: inherit;
   color: $input-text-color-mobile;
 
+  background-color: transparent;
   border: none;
   border-bottom: 2px solid $input-border-color;
 
@@ -57,7 +58,7 @@
 
   &:focus {
     outline: none;
-    border-color: #62d1ba;
+    border-color: $input-border-color--focus;
   }
 
   &--textarea {
