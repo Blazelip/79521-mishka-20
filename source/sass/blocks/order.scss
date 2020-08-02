@@ -9,4 +9,8 @@
   margin-bottom: 29px;
 
   color: $text-basic;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 60px;
+  }
 }
