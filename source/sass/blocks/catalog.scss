@@ -3,7 +3,9 @@
 }
 
 .catalog__list {
-
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .catalog__item {
@@ -13,5 +15,19 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 316px;
+    margin-bottom: 0;
+    margin-right: 52px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }

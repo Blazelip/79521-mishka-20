@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="keyowrds" content="Какие-то ключевые слова через запятую">
   <meta name="description" content="Какое-то описание сайта">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -39,7 +40,9 @@
 
   <main>
     <section class="title-section">
-      <h1 class="main-title">Каталог товаров</h1>
+      <div class="wrapper">
+        <h1 class="main-title">Каталог товаров</h1>
+      </div>
     </section>
 
     <section class="catalog wrapper">
@@ -52,17 +55,18 @@
               <img class="product__image" src="https://via.placeholder.com/150x150" alt="Зайчик-попрыгайчик" width="260" height="195">
             </a>
 
-            <h3 class="product__title">
-              <a href="#" class="product__title-link">
-                Зайчик-попрыгайчик
-              </a>
-            </h3>
+            <div class="product__description">
+              <div class="product__info">
+                <h3 class="product__title">
+                  <a href="#" class="product__title-link">Зайчик-попрыгайчик</a>
+                </h3>
+                <p class="product__size">Рост 30 см, вес 200 г</p>
+              </div>
 
-            <p class="product__info">Рост 30 см, вес 200 г</p>
-
-            <div class="product__purchase-menu">
-              <p class="product__price">1 200 руб.</p>
-              <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              <div class="product__purchase-menu">
+                <p class="product__price">1 200 руб.</p>
+                <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              </div>
             </div>
           </article>
         </li>
@@ -73,17 +77,20 @@
               <img class="product__image" src="https://via.placeholder.com/150x150" alt="Корзинка для белья" width="260" height="195">
             </a>
 
-            <h3 class="product__title">
-              <a href="#" class="product__title-link">
-                Корзинка для белья
-              </a>
-            </h3>
+            <div class="product__description">
+              <div class="product__info">
+                <h3 class="product__title">
+                  <a href="#" class="product__title-link">
+                    Корзинка для белья
+                  </a>
+                </h3>
+                <p class="product__size">Диаметр 15 см, высота 10 см</p>
+              </div>
 
-            <p class="product__info">Диаметр 15 см, высота 10 см</p>
-
-            <div class="product__purchase-menu">
-              <p class="product__price">690 руб.</p>
-              <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              <div class="product__purchase-menu">
+                <p class="product__price">690 руб.</p>
+                <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              </div>
             </div>
           </article>
         </li>
@@ -94,18 +101,20 @@
               <img class="product__image" src="https://via.placeholder.com/150x150" alt="Большая корзинка для игрушек" width="260" height="195">
             </a>
 
+            <div class="product__description">
+              <div class="product__info">
+                <h3 class="product__title">
+                  <a href="#" class="product__title-link">
+                    Большая корзинка<br>для игрушек
+                  </a>
+                </h3>
+                <p class="product__size">Диаметр 30 см, высота 30 см</p>
+              </div>
 
-            <h3 class="product__title">
-              <a href="#" class="product__title-link">
-                Большая корзинка для игрушек
-              </a>
-            </h3>
-
-            <p class="product__info">Диаметр 30 см, высота 30 см</p>
-
-            <div class="product__purchase-menu">
-              <p class="product__price">1 500 руб.</p>
-              <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              <div class="product__purchase-menu">
+                <p class="product__price">1 500 руб.</p>
+                <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              </div>
             </div>
           </article>
         </li>
