@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="keyowrds" content="Какие-то ключевые слова через запятую">
   <meta name="description" content="Какое-то описание сайта">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Каталог товаров</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -14,12 +15,12 @@
     <div class="main-header__wrapper wrapper">
       <nav class="main-navigation">
         <a class="main-navigation__logo" href="index.html">
-          <img src="https://via.placeholder.com/150x150"" width="86" height="35" alt="Логотип интернет-магазина Mishka">
+          <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет-магазина Mishka">
         </a>
 
-        <button type="button" class="main-navigation__nav-toggle" aria-label="Открыть меню сайта"></button>
+        <button type="button" class="main-navigation__nav-toggle button" aria-label="Открыть меню сайта"></button>
 
-        <ul class="main-navigation_site-nav site-navigation">
+        <ul class="main-navigation_site-nav site-navigation list list--resetted">
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">Каталог товаров</a>
           </li>
@@ -27,12 +28,7 @@
             <a class="site-navigation__link" href="#">Вязание на заказ</a>
           </li>
           <li class="site-navigation__item">
-            <form class="search-form" method="GET" action="https://echo.htmlacademy.ru/">
-              <label class="visually-hidden" for="search-field">Поиск по сайту</label>
-              <input class="search-form__field" type="search" name="search" id="search-field"
-                placeholder="Поиск по сайту">
-              <button class="search-form__submit" type="submit">Найти</button>
-            </form>
+            <a class="site-navigation__link" href="#">Поиск по сайту</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">Корзина: пока пуста</a>
@@ -49,25 +45,28 @@
       </div>
     </section>
 
-    <section class="catalog">
+    <section class="catalog wrapper">
       <h2 class="visually-hidden">Каталог товаров</h2>
 
-      <ul class="catalog__list">
+      <ul class="catalog__list list list--resetted">
         <li class="catalog__item">
           <article class="product">
             <a href="" class="product__image-link">
-              <img class="product__image" src="https://via.placeholder.com/150x150"" alt="Зайчик-попрыгайчик" width="260" height="195">
+              <img class="product__image" src="https://via.placeholder.com/150x150" alt="Зайчик-попрыгайчик" width="260" height="195">
             </a>
 
-            <a href="" class="product__title-link">
-              <h3 class="product__title">Зайчик-попрыгайчик</h3>
-            </a>
+            <div class="product__description">
+              <div class="product__info">
+                <h3 class="product__title">
+                  <a href="#" class="product__title-link">Зайчик-попрыгайчик</a>
+                </h3>
+                <p class="product__size">Рост 30 см, вес 200 г</p>
+              </div>
 
-            <p class="product__info">Рост 30 см, вес 200 г</p>
-
-            <div class="product__purchase-menu">
-              <p class="product__price">1 200 руб.</p>
-              <button class="product__cart-button" type="button" aria-label="Положить в корзину"></button>
+              <div class="product__purchase-menu">
+                <p class="product__price">1 200 руб.</p>
+                <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              </div>
             </div>
           </article>
         </li>
@@ -75,18 +74,23 @@
         <li class="catalog__item">
           <article class="product">
             <a href="" class="product__image-link">
-              <img class="product__image" src="https://via.placeholder.com/150x150"" alt="Корзинка для белья" width="260" height="195">
+              <img class="product__image" src="https://via.placeholder.com/150x150" alt="Корзинка для белья" width="260" height="195">
             </a>
 
-            <a href="" class="product__title-link">
-              <h3 class="product__title">Корзинка для белья</h3>
-            </a>
+            <div class="product__description">
+              <div class="product__info">
+                <h3 class="product__title">
+                  <a href="#" class="product__title-link">
+                    Корзинка для белья
+                  </a>
+                </h3>
+                <p class="product__size">Диаметр 15 см, высота 10 см</p>
+              </div>
 
-            <p class="product__info">Диаметр 15 см, высота 10 см</p>
-
-            <div class="product__purchase-menu">
-              <p class="product__price">690 руб.</p>
-              <button class="product__cart-button" type="button" aria-label="Положить в корзину"></button>
+              <div class="product__purchase-menu">
+                <p class="product__price">690 руб.</p>
+                <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              </div>
             </div>
           </article>
         </li>
@@ -97,37 +101,45 @@
               <img class="product__image" src="https://via.placeholder.com/150x150" alt="Большая корзинка для игрушек" width="260" height="195">
             </a>
 
-            <a href="" class="product__title-link">
-              <h3 class="product__title">Большая корзинка для игрушек</h3>
-            </a>
+            <div class="product__description">
+              <div class="product__info">
+                <h3 class="product__title">
+                  <a href="#" class="product__title-link">
+                    Большая корзинка<br>для игрушек
+                  </a>
+                </h3>
+                <p class="product__size">Диаметр 30 см, высота 30 см</p>
+              </div>
 
-            <p class="product__info">Диаметр 30 см, высота 30 см</p>
-
-            <div class="product__purchase-menu">
-              <p class="product__price">1 500 руб.</p>
-              <button class="product__cart-button" type="button" aria-label="Положить в корзину"></button>
+              <div class="product__purchase-menu">
+                <p class="product__price">1 500 руб.</p>
+                <a class="product__cart-button button" href="#" aria-label="Положить в корзину"></a>
+              </div>
             </div>
           </article>
         </li>
       </ul>
     </section>
 
-    <section class="producing">
+    <section class="producing wrapper">
       <h2 class="producing__title">Процесс производства</h2>
 
       <div class="producing__video">
-        <video src="#" width="260" height="150" controls preload="metadata" poster="https://via.placeholder.com/150x150"></video>
+        <button class="producing__play-video button" type="button" aria-label="Воспроизвести видео"></button>
+        <img class="producing__preview" src="https://kiev.vgorode.ua/img/article/6332/38_main-v1584373692.png" width="682" height="455" alt="Видео производства товаров">
       </div>
 
-      <p class="producing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      <a class="producing__button button" href="#">Сделать заказ</a>
+      <div class="producing__info">
+        <p class="producing__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+        <a class="producing__button button button--primary" href="#">Сделать заказ</a>
+      </div>
     </section>
 
   </main>
 
   <footer class="main-footer">
     <div class="main-footer__wrapper wrapper">
-      <ul class="main-footer__socials socials">
+      <ul class="main-footer__socials socials list list--resetted">
         <li class="socials__item">
           <a href="#" aria-label="Мы в Фейсбуке"></a>
         </li>
@@ -141,7 +153,7 @@
 
       <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано:</span>
-        <img class="copyright__image" src="https://via.placeholder.com/150x150"" alt="Логотип HTML Academy" width="27" height="34">
+        <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </div>
   </footer>

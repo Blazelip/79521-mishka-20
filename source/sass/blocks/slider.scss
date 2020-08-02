@@ -3,10 +3,7 @@
 }
 
 .slider__feedback-list {
-  margin: 0;
   margin-bottom: 30px;
-  padding: 0;
-  list-style: none;
 }
 
 .slider__feedback-item {
@@ -14,25 +11,28 @@
 }
 
 .slider__feedback-text {
+  @include fz-lh(15px, 30px);
+
   margin: 0;
   margin-bottom: 33px;
   padding: 0;
 
-  @include fz-lh(15px, 30px);
   color: $text-basic;
 }
 
 .slider__feedback-author {
+  @include fz-lh(17px, 24px);
+
   margin: 0;
 
-  @include fz-lh(17px, 24px);
   font-weight: 700;
 }
 
 .slider__feedback-author-link {
+  @include fz-lh(17px, 30px);
+
   margin: 0;
 
-  @include fz-lh(17px, 30px);
   color: $text-basic;
 }
 

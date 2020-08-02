@@ -1,13 +1,10 @@
-.advantages-list {
-  margin: 0;
-  padding: 0;
-
+.advantages {
   @include fz-lh(17px, 20px);
+
   font-weight: bold;
-  list-style: none;
 }
 
-.advantages-list__item {
+.advantages__item {
   padding-top: 54px;
   margin-bottom: 32px;
 

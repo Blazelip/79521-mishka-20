@@ -1,23 +1,91 @@
 .producing {
+  display: grid;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "title"
+    "video"
+    "info";
+
   border: 1px solid #ececec;
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "video"
+      "title"
+      "info";
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 682px 366px;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+      "video title"
+      "video info";
+  }
 }
 
 .producing__title {
-  margin: 0;
+  grid-area: title;
+
+  position: relative;
 
   @include fz-lh(17px, 24px);
+
+  margin: 0;
+  margin-bottom: 26px;
+
   font-weight: 700;
+  padding-left: 57px;
+
+  outline: 3px solid rgba(tomato, 0.7);
+  outline-offset: -3px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    display: block;
+
+    width: 32px;
+    height: 22px;
+
+    background-image: url("../img/icon-video.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .producing__video {
+  grid-area: video;
+
   margin-bottom: 35px;
+  outline: 3px solid rgba(cyan, 0.7);
+  outline-offset: -3px;
+}
+
+.producing__play-video {
+
+}
+
+.producing__preview {
+
+}
+
+.producing__info {
+  grid-area: info;
+
+  outline: 3px solid rgba(yellow, 0.7);
+  outline-offset: -3px;
 }
 
 .producing__description {
+  @include fz-lh(13px, 24px);
+
   margin: 0;
   margin-bottom: 41px;
 
-  @include fz-lh(13px, 24px);
   color: $text-basic;
 }
 

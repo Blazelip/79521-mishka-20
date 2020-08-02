@@ -1,12 +1,11 @@
 .catalog-menu {
   @include fz-lh(19px, 24px);
+
   margin-bottom: 31px;
 }
 
 .catalog-menu__list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+
 }
 
 .catalog-menu__item {
@@ -27,6 +26,8 @@
 
 .catalog-menu__link {
   display: block;
+
   padding: 24px 0 31px;
+
   color: $white;
 }

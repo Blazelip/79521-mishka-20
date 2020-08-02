@@ -1,47 +1,112 @@
 .product {
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    display: flex;
+  }
 }
 
 .product__image-link {
+  display: block;
+  outline: 3px solid rgba(black, 0.8);
+  outline-offset: -3px;
 
+  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+    width: 335px;
+  }
 }
 
 .product-image {
 
 }
 
-.product__title-link {
-  display: block;
-}
+.product__description {
+  padding: 32px 28px 28px;
 
-.product__title {
-  margin: 0;
+  border: 1px solid $section-border-color;
+  outline: 3px solid rgba(yellow, 0.8);
+  outline-offset: -3px;
 
-  @include fz-lh(17px, 24px);
-  font-weight: 700;
-  color: $text-heading;
+  @media (min-width: $tablet-width) {
+    width: 335px;
+    padding: 30px 33px 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding: 26px 27px 24px;
+  }
 }
 
 .product__info {
-  margin: 0;
-  padding-bottom: 17.5px;
-  border-bottom: 1px solid #ececec;
+  min-height: 59px;
+  margin-bottom: 23px;
+  padding-bottom: 17px;
 
+  border-bottom: 1px solid $section-border-color;
+
+  @media (min-width: $tablet-width) {
+    min-height: 234px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 96px;
+  }
+}
+
+.product__title {
+  @include fz-lh(17px, 24px);
+
+  margin: 0;
+  margin-bottom: 6px;
+
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include fz-lh(20px, 24px);
+  }
+}
+
+.product__title-link {
+  display: block;
+
+  color: $text-heading;
+}
+
+.product__size {
   @include fz-lh(13px, 30px);
+
+  margin: 0;
+
   color: $text-basic;
+
+  @media (min-width: $tablet-width) {
+    @include fz-lh(15px, 30px);
+  }
 }
 
 .product__purchase-menu {
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .product__price {
+  @include fz-lh(15px, 24px);
+
   margin: 0;
 
-  @include fz-lh(15px, 24px);
   font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    @include fz-lh(17px, 24px);
+  }
 }
 
 .product__cart-button {
+  width: 20px;
+  height: 19px;
 
+  background-image: url("../img/icon-cart.svg");
+  background-repeat: no-repeat;
+  opacity: 20%;
 }
