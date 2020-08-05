@@ -1,11 +1,41 @@
 .socials {
+  padding: 23px 0 25px;
 
+  text-align: center;
+
+  border-bottom: 1px solid #e5e5e5;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .socials__item {
+  display: inline-block;
+  margin-right: 40px;
 
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .socials__link {
+  display: block;
+  width: 28px;
+  height: 28px;
 
+  background-repeat: no-repeat;
+  background-position: center;
+
+  &--ig {
+    background-image: url("../img/icon-insta.svg");
+  }
+
+  &--fb {
+    background-image: url("../img/icon-fb.svg");
+  }
+
+  &--tw {
+    background-image: url("../img/icon-twitter.svg");
+  }
 }

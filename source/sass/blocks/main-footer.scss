@@ -1,11 +1,36 @@
 .main-footer {
   background-color: $color-background-grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 0 58px;
+  }
+}
+
+.main-footer__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-footer__logo {
+  display: none;
+
+  outline: 2px solid rgba(tomato, 0.7);
+  outline-offset: -2px;
+
+  @media (min-width: $tablet-width) {
+    display: inline;
+  }
 }
 
 .main-footer__socials {
-
+  outline: 2px solid rgba(blue, 0.7);
+  outline-offset: -2px;
 }
 
 .main-footer__copyright {
-
+  outline: 2px solid rgba(green, 0.7);
+  outline-offset: -2px;
 }
