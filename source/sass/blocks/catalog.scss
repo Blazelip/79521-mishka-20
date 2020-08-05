@@ -1,5 +1,13 @@
 .catalog {
-  margin-bottom: 30px;
+  padding-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 57px;
+  }
 }
 
 .catalog__list {
@@ -22,11 +30,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 316px;
+    width: calc(100% / 3);
     margin-bottom: 0;
     margin-right: 52px;
 
-    &:last-child {
+    &:nth-child(3n) {
       margin-right: 0;
     }
   }

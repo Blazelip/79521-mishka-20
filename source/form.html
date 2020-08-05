@@ -22,7 +22,7 @@
 
         <ul class="main-navigation_site-nav site-navigation list list--resetted">
           <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Каталог товаров</a>
+            <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="site-navigation__item">
             <a class="site-navigation__link" href="#">Вязание на заказ</a>
@@ -53,7 +53,7 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
         <fieldset class="form__fieldset form__fieldset--radio">
           <div class="form__fieldset-flex">
-            <legend class="form__fieldset-name">Тип</legend>
+            <div class="form__fieldset-name">Тип</div>
 
             <ul class="form__radio-list list list--resetted">
               <li class="form__radio-item">
@@ -70,40 +70,40 @@
 
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <div class="form__fieldset-flex">
-            <legend class="form__fieldset-name">Цвет</legend>
+            <div class="form__fieldset-name">Цвет</div>
 
             <ul class="form__checkbox-list list list--resetted">
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="white" id="color-white" checked>
+                <input class="form__checkbox" type="checkbox" name="color" value="white" id="color-white" checked>
                 <label class="form__label form__label--checkbox" for="color-white">Белый</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="grey" id="color-grey" checked>
+                <input class="form__checkbox" type="checkbox" name="color" value="grey" id="color-grey" checked>
                 <label class="form__label form__label--checkbox" for="color-grey">Серый</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="tiffani" id="color-tiffani">
+                <input class="form__checkbox" type="checkbox" name="color" value="tiffani" id="color-tiffani">
                 <label class="form__label form__label--checkbox" for="color-tiffani">«‎Тиффани»</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="black" id="color-black">
+                <input class="form__checkbox" type="checkbox" name="color" value="black" id="color-black">
                 <label class="form__label form__label--checkbox" for="color-black">Черный</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="pink" id="color-pink">
+                <input class="form__checkbox" type="checkbox" name="color" value="pink" id="color-pink">
                 <label class="form__label form__label--checkbox" for="color-pink">Розовый</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="orange" id="color-orange">
+                <input class="form__checkbox" type="checkbox" name="color" value="orange" id="color-orange">
                 <label class="form__label form__label--checkbox" for="color-orange">Оранжевый</label>
               </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--text-fields">
+        <fieldset class="form__fieldset form__fieldset--fio-fields">
           <div class="form__fieldset-flex">
-            <legend class="form__fieldset-name">ФИО</legend>
+            <div class="form__fieldset-name form__fieldset-name--fio">ФИО</div>
 
             <ul class="form__text-input-list list list--resetted">
               <li class="form__text-input-item">
@@ -122,16 +122,18 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--last">
-          <div class="form__fieldset-flex">
-            <label class="form__fieldset-name form__fieldset-name--last" for="tel-field">Тел</label>
-            <input class="form__text-input form__text-input--last" type="tel" name="phone" id="tel-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <fieldset class="form__fieldset form__fieldset--user-data">
+          <div class="form__background">
+            <div class="form__fieldset-flex form__fieldset-flex--user-item">
+              <label class="form__fieldset-name form__fieldset-name--last" for="tel-field">Тел</label>
+              <input class="form__text-input form__text-input--last" type="tel" name="phone" id="tel-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </div>
+            <div class="form__fieldset-flex form__fieldset-flex--user-item">
+              <label class="form__fieldset-name form__fieldset-name--last" for="email-field">E-mail</label>
+              <input class="form__text-input form__text-input--last" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
+            </div>
           </div>
-          <div class="form__fieldset-flex">
-            <label class="form__fieldset-name form__fieldset-name--last" for="email-field">E-mail</label>
-            <input class="form__text-input form__text-input--last" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
-          </div>
-          <div class="form__fieldset-flex">
+          <div class="form__fieldset-flex form__fieldset-flex--user-item form__fieldset-flex--margin-zero">
             <label class="form__fieldset-name form__fieldset-name--last form__fieldset-name--last-textarea" for="comment-field">Доп</label>
             <textarea class="form__text-input form__text-input--last form__text-input--textarea" name="comment" id="comment-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
