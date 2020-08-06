@@ -1,17 +1,21 @@
 .site-navigation {
+  @include fz-lh(17px, 24px);
 
-  font-size: 17px;
-  line-height: 24px;
-
-  outline: 3px solid rgba(255, 50, 0, 0.5);
-  outline-offset: -3px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .site-navigation__item {
 
 }
 
+
 .site-navigation__link {
+  min-height: 79px;
+  padding: 28px 0 26px 46px;
+  display: block;
   color: $text-heading;
   font-weight: 700;
+  border-top: 1px solid $grey--lighten;
 }

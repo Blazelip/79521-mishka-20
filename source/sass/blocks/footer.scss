@@ -1,4 +1,4 @@
-.main-footer {
+.footer {
   background-color: $color-background-grey;
 
   @media (min-width: $tablet-width) {
@@ -6,7 +6,7 @@
   }
 }
 
-.main-footer__wrapper {
+.footer__wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -14,7 +14,7 @@
   }
 }
 
-.main-footer__logo {
+.footer__logo {
   display: none;
 
   outline: 2px solid rgba(tomato, 0.7);
@@ -25,12 +25,12 @@
   }
 }
 
-.main-footer__socials {
+.footer__socials {
   outline: 2px solid rgba(blue, 0.7);
   outline-offset: -2px;
 }
 
-.main-footer__copyright {
+.footer__copyright {
   outline: 2px solid rgba(green, 0.7);
   outline-offset: -2px;
 }

@@ -44,7 +44,7 @@
 }
 
 .form__fieldset-flex {
-  @media (max-width: $tablet-width) {
+  @media (max-width: $mobile-width-only) {
     &--user-item {
       margin-bottom: 35px;
     }
@@ -75,7 +75,7 @@
   }
 
   &--fio {
-    @media (max-width: $tablet-width) {
+    @media (max-width: $mobile-width-only) {
       margin-bottom: 29px;
     }
   }
