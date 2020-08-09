@@ -1,11 +1,28 @@
 .about {
   margin-bottom: 58px;
+
+  @media #{$screen-tablet} {
+    margin-bottom: 83px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 90px;
+  }
 }
 
 .about__title {
   margin-bottom: 28px;
+
+  @media #{$screen-tablet} {
+    margin-bottom: 42px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 39px;
+  }
 }
 
 .about__advantages {
-
+  outline: 2px solid rgba(tomato, 0.7);
+  outline-offset: -2px;
 }

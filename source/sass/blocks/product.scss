@@ -1,7 +1,14 @@
 .product {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    display: flex;
+  @media #{$screen-tablet} {
+    flex-direction: row;
+  }
+
+  @media #{$screen-desktop} {
+    flex-direction: column;
   }
 }
 
@@ -10,8 +17,8 @@
   outline: 3px solid rgba(black, 0.8);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
-    width: 335px;
+  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
+    width: 50%;
   }
 }
 
@@ -20,37 +27,29 @@
 }
 
 .product__description {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
   padding: 32px 28px 28px;
 
   border: 1px solid $section-border-color;
   outline: 3px solid rgba(yellow, 0.8);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) {
-    width: 335px;
+  @media #{$screen-tablet} {
+    width: 50%;
     padding: 30px 33px 25px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     width: auto;
     padding: 26px 27px 24px;
   }
 }
 
 .product__info {
-  min-height: 59px;
-  margin-bottom: 23px;
-  padding-bottom: 17px;
-
-  border-bottom: 1px solid $section-border-color;
-
-  @media (min-width: $tablet-width) {
-    min-height: 234px;
-  }
-
-  @media (min-width: $desktop-width) {
-    min-height: 96px;
-  }
+  margin-bottom: 17px;
 }
 
 .product__title {
@@ -61,7 +60,7 @@
 
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(20px, 24px);
   }
 }
@@ -79,12 +78,15 @@
 
   color: $text-basic;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(15px, 30px);
   }
 }
 
 .product__purchase-menu {
+  margin-top: auto;
+  padding-top: 24px;
+  border-top: 1px solid $section-border-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -94,10 +96,11 @@
   @include fz-lh(15px, 24px);
 
   margin: 0;
+  padding-right: 20px;
 
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(17px, 24px);
   }
 }

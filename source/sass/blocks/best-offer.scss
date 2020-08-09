@@ -1,14 +1,46 @@
 .best-offer {
   margin-bottom: 31px;
   padding-bottom: 36px;
+
+  @media #{$screen-tablet} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 55px;
+    padding-bottom: 69px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 68px;
+    padding-bottom: 96px;
+  }
 }
 
 .best-offer__header {
   margin-bottom: 18px;
+
+  outline: 2px solid rgba(orange, 0.7);
+  outline-offset: -2px;
+
+  @media #{$screen-tablet} {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: center;
+    margin-bottom: 39px;
+  }
+
+  @media #{$screen-desktop} {
+    grid-row: 1 / 2;
+    margin-bottom: 0;
+    padding-top: 61px;
+  }
 }
 
 .best-offer__title {
   margin-bottom: 4px;
+
+  @media #{$screen-tablet} {
+    flex-grow: 1;
+  }
 }
 
 .best-offer__subtitle {
@@ -16,7 +48,33 @@
 
   margin: 0;
 
+  color: $green;
   font-weight: 700;
+
+  @media #{$screen-tablet} {
+    flex-basis: 167px;
+    line-height: 17px;
+  }
+
+  @media #{$screen-desktop} {
+    order: -1;
+  }
+}
+
+.best-offer__text {
+  outline: 2px solid rgba(tomato, 0.7);
+  outline-offset: -2px;
+
+  @media #{$screen-tablet} {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-right: 42px;
+    padding-bottom: 57px;
+  }
+
+  @media #{$screen-desktop} {
+    padding: 35px 58px 109px 167px;
+  }
 }
 
 .best-offer__description {
@@ -24,14 +82,60 @@
 
   margin: 0;
   margin-bottom: 28px;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(17px, 30px);
+
+    margin-bottom: 48px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 60px;
+  }
 }
 
 .best-offer__features {
   margin-bottom: 28px;
 }
 
-.best-offer__image {
+.best-offer__image-container {
   margin-bottom: 26px;
+
+  outline: 2px solid rgba(cyan, 0.7);
+  outline-offset: -2px;
+
+  @media #{$screen-tablet} {
+    grid-column: 2 / 3;
+    grid-row: 2 / 4;
+
+    margin-bottom: 0;
+  }
+
+  @media #{$screen-desktop} {
+    z-index: -1;
+    margin-bottom: 0;
+    grid-row: 1 / 4;
+  }
+}
+
+.best-offer__image {
+
+}
+
+.best-offer__purchase {
+  outline: 2px solid rgba(black, 0.7);
+  outline-offset: -2px;
+
+  @media #{$screen-tablet} {
+    grid-row: 3 / 4;
+
+    padding-right: 42px;
+  }
+
+  @media #{$screen-desktop} {
+    padding-right: 58px;
+    padding-left: 167px;
+  }
 }
 
 .best-offer__price {
@@ -42,8 +146,14 @@
 
   font-weight: bold;
   text-align: center;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(20px, 24px);
+
+    margin-bottom: 33px;
+  }
 }
 
 .best-offer__button {
-
+  width: 100%;
 }

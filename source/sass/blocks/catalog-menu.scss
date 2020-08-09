@@ -2,32 +2,78 @@
   @include fz-lh(19px, 24px);
 
   margin-bottom: 31px;
+
+  font-weight: 700;
+
+  @media #{$screen-tablet} {
+    margin-bottom: 40px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 54px;
+  }
 }
 
 .catalog-menu__list {
-
+  @media #{$screen-tablet} {
+    display: flex;
+  }
 }
 
 .catalog-menu__item {
-  background-repeat: no-repeat;
+  position: relative;
 
-  &--light-green {
+  &:nth-child(odd) {
     background-color: $green;
-    background-image: url("../img/icon-interior.svg");
-    background-position: 0 0;
   }
 
-  &--dark-green {
+  &:nth-child(even) {
     background-color: $green--darken;
-    background-image: url("../img/icon-toy.svg");
-    background-position: 0 0;
+  }
+
+  @media #{$screen-tablet} {
+    flex-basis: 50%;
   }
 }
 
 .catalog-menu__link {
   display: block;
 
-  padding: 24px 0 31px;
+  padding: 24px 160px 31px 30px;
 
   color: $white;
+
+  background-repeat: no-repeat;
+
+  &--interior::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 40px;
+    height: 62px;
+    background-image: url("../img/icon-interior.svg");
+    background-position: 0 0;
+  }
+
+  &--toy::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icon-toy.svg");
+    background-position: 0 0;
+  }
+
+  @media #{$screen-tablet} {
+    padding: 24px 167px 34px 30px;
+  }
+
+  @media #{$screen-desktop} {
+    padding: 25px 350px 34px 37px;
+  }
 }

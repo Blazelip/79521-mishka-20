@@ -16,8 +16,10 @@
 
 // HEADER
 
-@import "blocks/main-navigation.scss";
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
 @import "blocks/site-navigation.scss";
+@import "blocks/user-navigation.scss";
 @import "blocks/search-form.scss";
 
 // MAIN -- INDEX
@@ -48,6 +50,6 @@
 
 // FOOTER
 
-@import "blocks/main-footer.scss";
+@import "blocks/footer.scss";
 @import "blocks/socials.scss";
 @import "blocks/copyright.scss";

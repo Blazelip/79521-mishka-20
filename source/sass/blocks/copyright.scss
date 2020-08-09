@@ -1,10 +1,18 @@
 .copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 22px 0;
 
+  @media #{$screen-tablet} {
+    padding: 0;
+  }
 }
 
 .copyright__text {
   @include fz-lh(19px, 18px);
 
+  margin-right: 27px;
   font-weight: 700;
   color: $text-heading;
 }

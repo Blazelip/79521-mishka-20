@@ -11,31 +11,53 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
-    <div class="main-header__wrapper wrapper">
-      <nav class="main-navigation">
-        <a class="main-navigation__logo" href="index.html">
-          <img src="https://via.placeholder.com/150x150" width="86" height="35" alt="Логотип интернет-магазина Mishka">
-        </a>
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <nav class="main-nav main-nav--closed">
+        <div class="main-nav__base">
+          <a class="main-nav__logo logo">
+            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka">
+          </a>
 
-        <button type="button" class="main-navigation__nav-toggle button" aria-label="Открыть меню сайта"></button>
+          <button type="button" class="main-nav__toggle button" aria-label="Открыть меню сайта"></button>
+        </div>
 
-        <ul class="main-navigation_site-nav site-navigation list list--resetted">
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Каталог товаров</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Вязание на заказ</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Поиск по сайту</a>
-          </li>
-          <li class="site-navigation__item">
-            <a class="site-navigation__link" href="#">Корзина: пока пуста</a>
-          </li>
-        </ul>
+          <ul class="main-nav__site-nav site-navigation list list--resetted">
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="catalog.html">Каталог товаров</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="form.html">Вязание на заказ</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="form.html">Новые поступления</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link" href="form.html">Распродажа</a>
+            </li>
+          </ul>
+
+          <ul class="main-nav__user-nav user-navigation list list--resetted">
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--search" href="">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.6px" height="17.6px" viewBox="-0.8 -0.8 17.6 17.6" enable-background="new -0.8 -0.8 17.6 17.6" xml:space="preserve">
+                  <path fill="#231F20" d="M16.47,14.93l-3.415-3.415C14.02,10.226,14.6,8.634,14.6,6.899c0-4.253-3.447-7.699-7.7-7.699 S-0.8,2.646-0.8,6.899s3.446,7.7,7.699,7.7c1.734,0,3.326-0.58,4.613-1.546l3.417,3.416c0.203,0.202,0.418,0.33,0.771,0.33 c0.607,0,1.1-0.492,1.1-1.1C16.8,15.459,16.739,15.2,16.47,14.93z M1.399,6.899c0-3.038,2.462-5.5,5.5-5.5s5.5,2.462,5.5,5.5 s-2.462,5.5-5.5,5.5S1.399,9.938,1.399,6.899z"/>
+                </svg>
+                <span class="user-navigation__text">Поиск по сайту</span>
+              </a>
+            </li>
+            <li class="user-navigation__item">
+              <a class="user-navigation__link user-navigation__link--cart" href="">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20.294px" height="18.849px" viewBox="264.205 370.961 20.294 18.849" enable-background="new 264.205 370.961 20.294 18.849" xml:space="preserve">
+                  <path fill="#231F20" d="M283.75,378.19h-3.151l-3.407-6.814c-0.185-0.37-0.634-0.52-1.006-0.335 c-0.371,0.186-0.521,0.636-0.335,1.006l3.071,6.143h-9.138l3.072-6.143c0.185-0.371,0.035-0.821-0.335-1.006 c-0.37-0.185-0.821-0.035-1.006,0.335l-3.407,6.814h-3.151c-0.414,0-0.75,0.336-0.75,0.75s0.336,0.75,0.75,0.75h0.157l0.855,2.991 c-0.187,0.137-0.316,0.347-0.316,0.595c0,0.396,0.309,0.71,0.697,0.739l1.656,5.795h12.697l1.656-5.795 c0.388-0.028,0.698-0.344,0.698-0.739c0-0.249-0.129-0.459-0.316-0.596l0.854-2.991h0.157c0.414,0,0.75-0.336,0.75-0.75 S284.164,378.19,283.75,378.19z M279.569,388.311h-10.433l-1.224-4.284h12.881L279.569,388.311z M281.222,382.526h-13.739 l-0.81-2.836h15.359L281.222,382.526z"/>
+                </svg>
+                <span>Корзина: пока пуста</span>
+              </a>
+            </li>
+          </ul>
+
+        <p class="main-nav__delivery">Бесплатная доставка по России</p>
       </nav>
-
     </div>
   </header>
 
@@ -53,7 +75,7 @@
       <form class="form" action="https://echo.htmlacademy.ru/" method="POST">
         <fieldset class="form__fieldset form__fieldset--radio">
           <div class="form__fieldset-flex">
-            <legend class="form__fieldset-name">Тип</legend>
+            <div class="form__fieldset-name">Тип</div>
 
             <ul class="form__radio-list list list--resetted">
               <li class="form__radio-item">
@@ -70,40 +92,40 @@
 
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <div class="form__fieldset-flex">
-            <legend class="form__fieldset-name">Цвет</legend>
+            <div class="form__fieldset-name">Цвет</div>
 
             <ul class="form__checkbox-list list list--resetted">
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="white" id="color-white" checked>
+                <input class="form__checkbox" type="checkbox" name="color" value="white" id="color-white" checked>
                 <label class="form__label form__label--checkbox" for="color-white">Белый</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="grey" id="color-grey" checked>
+                <input class="form__checkbox" type="checkbox" name="color" value="grey" id="color-grey" checked>
                 <label class="form__label form__label--checkbox" for="color-grey">Серый</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="tiffani" id="color-tiffani">
+                <input class="form__checkbox" type="checkbox" name="color" value="tiffani" id="color-tiffani">
                 <label class="form__label form__label--checkbox" for="color-tiffani">«‎Тиффани»</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="black" id="color-black">
+                <input class="form__checkbox" type="checkbox" name="color" value="black" id="color-black">
                 <label class="form__label form__label--checkbox" for="color-black">Черный</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="pink" id="color-pink">
+                <input class="form__checkbox" type="checkbox" name="color" value="pink" id="color-pink">
                 <label class="form__label form__label--checkbox" for="color-pink">Розовый</label>
               </li>
               <li class="form__checkbox-item">
-                <input class="form__checkbox" type="checkbox" name="" value="orange" id="color-orange">
+                <input class="form__checkbox" type="checkbox" name="color" value="orange" id="color-orange">
                 <label class="form__label form__label--checkbox" for="color-orange">Оранжевый</label>
               </li>
             </ul>
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--text-fields">
+        <fieldset class="form__fieldset form__fieldset--fio-fields">
           <div class="form__fieldset-flex">
-            <legend class="form__fieldset-name">ФИО</legend>
+            <div class="form__fieldset-name form__fieldset-name--fio">ФИО</div>
 
             <ul class="form__text-input-list list list--resetted">
               <li class="form__text-input-item">
@@ -122,16 +144,18 @@
           </div>
         </fieldset>
 
-        <fieldset class="form__fieldset form__fieldset--last">
-          <div class="form__fieldset-flex">
-            <label class="form__fieldset-name form__fieldset-name--last" for="tel-field">Тел</label>
-            <input class="form__text-input form__text-input--last" type="tel" name="phone" id="tel-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+        <fieldset class="form__fieldset form__fieldset--user-data">
+          <div class="form__background">
+            <div class="form__fieldset-flex form__fieldset-flex--user-item">
+              <label class="form__fieldset-name form__fieldset-name--last" for="tel-field">Тел</label>
+              <input class="form__text-input form__text-input--last" type="tel" name="phone" id="tel-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            </div>
+            <div class="form__fieldset-flex form__fieldset-flex--user-item">
+              <label class="form__fieldset-name form__fieldset-name--last" for="email-field">E-mail</label>
+              <input class="form__text-input form__text-input--last" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
+            </div>
           </div>
-          <div class="form__fieldset-flex">
-            <label class="form__fieldset-name form__fieldset-name--last" for="email-field">E-mail</label>
-            <input class="form__text-input form__text-input--last" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
-          </div>
-          <div class="form__fieldset-flex">
+          <div class="form__fieldset-flex form__fieldset-flex--user-item form__fieldset-flex--margin-zero">
             <label class="form__fieldset-name form__fieldset-name--last form__fieldset-name--last-textarea" for="comment-field">Доп</label>
             <textarea class="form__text-input form__text-input--last form__text-input--textarea" name="comment" id="comment-field" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
@@ -147,23 +171,27 @@
 
   </main>
 
-  <footer class="main-footer">
-    <div class="main-footer__wrapper wrapper">
-      <ul class="main-footer__socials socials list list--resetted">
+  <footer class="footer">
+    <div class="footer__wrapper wrapper">
+      <a class="footer__logo logo">
+        <img src="img/logo-footer.svg" width="102" height="34" alt="Логотип интернет-магазина Mishka">
+      </a>
+
+      <ul class="footer__socials socials list list--resetted">
         <li class="socials__item">
-          <a href="#" aria-label="Мы в Фейсбуке"></a>
+          <a class="socials__link socials__link--ig" href="#" aria-label="Мы в Фейсбуке"></a>
         </li>
         <li class="socials__item">
-          <a href="#" aria-label="Мы в Инстаграме"></a>
+          <a class="socials__link socials__link--fb" href="#" aria-label="Мы в Инстаграме"></a>
         </li>
         <li class="socials__item">
-          <a href="#" aria-label="Мы в Твиттере"></a>
+          <a class="socials__link socials__link--tw" href="#" aria-label="Мы в Твиттере"></a>
         </li>
       </ul>
 
-      <a class="main-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
+      <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
         <span class="copyright__text">Разработано:</span>
-        <img class="copyright__image" src="https://via.placeholder.com/150x150" alt="Логотип HTML Academy" width="27" height="34">
+        <img class="copyright__image" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27" height="34">
       </a>
     </div>
   </footer>
