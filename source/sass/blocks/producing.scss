@@ -1,11 +1,11 @@
 .producing {
   padding-bottom: 58px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     padding-bottom: 63px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     padding-bottom: 105px;
   }
 }
@@ -13,7 +13,7 @@
 .producing__containter {
   border: 1px solid #ececec;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: grid;
     grid-template-rows: auto auto auto;
     grid-template-areas:
@@ -22,7 +22,7 @@
       "info";
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     grid-template-columns: 682px 366px;
     grid-template-rows: auto auto;
     grid-template-areas:
@@ -46,12 +46,12 @@
   outline: 3px solid rgba(tomato, 0.7);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     font-size: 20px;
     padding: 39px 40px 25px 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     padding: 96px 110px 27px 79px;
   }
 
@@ -95,11 +95,11 @@
   outline: 3px solid rgba(yellow, 0.7);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     padding: 0 17px 46px 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     padding: 0 36px 60px 79px;
   }
 }
@@ -112,17 +112,17 @@
 
   color: $text-basic;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(15px, 30px);
   }
 }
 
 .producing__button {
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     width: 584px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     width: auto;
   }
 }

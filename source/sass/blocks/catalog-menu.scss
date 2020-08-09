@@ -5,17 +5,17 @@
 
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     margin-bottom: 40px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     margin-bottom: 54px;
   }
 }
 
 .catalog-menu__list {
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: flex;
   }
 }
@@ -23,15 +23,15 @@
 .catalog-menu__item {
   position: relative;
 
-  &--light-green {
+  &:nth-child(odd) {
     background-color: $green;
   }
 
-  &--dark-green {
+  &:nth-child(even) {
     background-color: $green--darken;
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     flex-basis: 50%;
   }
 }
@@ -69,11 +69,11 @@
     background-position: 0 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     padding: 24px 167px 34px 30px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     padding: 25px 350px 34px 37px;
   }
 }

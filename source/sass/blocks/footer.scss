@@ -1,13 +1,13 @@
 .footer {
   background-color: $color-background-grey;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     padding: 51px 0 58px;
   }
 }
 
 .footer__wrapper {
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -20,7 +20,7 @@
   outline: 2px solid rgba(tomato, 0.7);
   outline-offset: -2px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: inline;
   }
 }

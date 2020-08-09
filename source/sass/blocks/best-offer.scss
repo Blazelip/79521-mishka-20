@@ -2,15 +2,14 @@
   margin-bottom: 31px;
   padding-bottom: 36px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto auto;
     margin-bottom: 55px;
     padding-bottom: 69px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     margin-bottom: 68px;
     padding-bottom: 96px;
   }
@@ -22,24 +21,24 @@
   outline: 2px solid rgba(orange, 0.7);
   outline-offset: -2px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     grid-column: 1 / -1;
     display: flex;
     align-items: center;
     margin-bottom: 39px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     grid-row: 1 / 2;
     margin-bottom: 0;
-    padding-top: 60px;
+    padding-top: 61px;
   }
 }
 
 .best-offer__title {
   margin-bottom: 4px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     flex-grow: 1;
   }
 }
@@ -52,12 +51,12 @@
   color: $green;
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     flex-basis: 167px;
     line-height: 17px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     order: -1;
   }
 }
@@ -66,14 +65,15 @@
   outline: 2px solid rgba(tomato, 0.7);
   outline-offset: -2px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding-right: 42px;
+    padding-bottom: 57px;
   }
 
-  @media (min-width: $desktop-width) {
-    padding: 35px 58px 0 167px;
+  @media #{$screen-desktop} {
+    padding: 35px 58px 109px 167px;
   }
 }
 
@@ -83,27 +83,19 @@
   margin: 0;
   margin-bottom: 28px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(17px, 30px);
 
     margin-bottom: 48px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     margin-bottom: 60px;
   }
 }
 
 .best-offer__features {
   margin-bottom: 28px;
-
-  @media (min-width: $tablet-width) {
-    margin-bottom: 57px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 109px;
-  }
 }
 
 .best-offer__image-container {
@@ -112,14 +104,14 @@
   outline: 2px solid rgba(cyan, 0.7);
   outline-offset: -2px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
 
     margin-bottom: 0;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     z-index: -1;
     margin-bottom: 0;
     grid-row: 1 / 4;
@@ -134,13 +126,13 @@
   outline: 2px solid rgba(black, 0.7);
   outline-offset: -2px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     grid-row: 3 / 4;
 
     padding-right: 42px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     padding-right: 58px;
     padding-left: 167px;
   }
@@ -155,7 +147,7 @@
   font-weight: bold;
   text-align: center;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(20px, 24px);
 
     margin-bottom: 33px;

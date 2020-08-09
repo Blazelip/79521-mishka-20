@@ -5,11 +5,11 @@
 
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(43px, 50px);
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     @include fz-lh(53px, 57px);
   }
 }

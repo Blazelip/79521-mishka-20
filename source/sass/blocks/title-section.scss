@@ -7,4 +7,9 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
   }
+
+  @media #{$screen-tablet} {
+    margin-top: -66px;
+    padding-top: 170px;
+  }
 }

@@ -1,8 +1,12 @@
 .user-navigation {
   @include fz-lh(17px, 24px);
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: flex;
+  }
+
+  @media #{$screen-desktop} {
+    justify-content: flex-end;
   }
 }
 
@@ -12,23 +16,33 @@
 
 .user-navigation__link {
   position: relative;
-  min-height: 79px;
   padding: 28px 0 26px 0;
   display: block;
   color: $text-heading;
   font-weight: 700;
   border-top: 1px solid $grey--lighten;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 0;
-  //   top: 0;
-  //   bottom: 0;
-  //   margin: auto 0;
-  //   display: block;
-  //   width: 21px;
-  //   height: 21px;
-  //   background-color: tomato;
-  // }
+  @media #{$screen-tablet} {
+    border: 0;
+  }
+
+  &--search {
+    @media #{$screen-tablet} {
+      padding: 36px 31px 34px 33px;
+      border-left: 1px solid rgba(#000000, 0.1);
+      border-right: 1px solid rgba(#000000, 0.1);
+    }
+  }
+
+  &--cart {
+    @media #{$screen-tablet} {
+      padding: 33px 0 32px 53px;
+    }
+  }
+}
+
+.user-navigation__text {
+  @media #{$screen-tablet} {
+    display: none;
+  }
 }

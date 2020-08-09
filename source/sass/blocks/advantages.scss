@@ -1,14 +1,48 @@
 .advantages {
   @include fz-lh(17px, 20px);
 
-  font-weight: bold;
+  font-weight: 700;
+
+  @media #{$screen-tablet} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .advantages__item {
   padding-top: 54px;
   margin-bottom: 32px;
 
+  &:first-child {
+    order: 1;
+  }
+
+  &:nth-child(2) {
+    order: 3;
+  }
+
+  &:nth-child(3) {
+    order: 5;
+  }
+
+  &:nth-child(4) {
+    order: 2;
+  }
+
+  &:nth-child(5) {
+    order: 4;
+  }
+
   &:last-child {
+    order: 6;
     margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: tomato;
   }
 }

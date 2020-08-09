@@ -1,6 +1,11 @@
 $tablet-width: 768px;
 $desktop-width: 1150px;
 $mobile-width-only: 767px;
+$tablet-width-only: 1149px;
+
+$screen-mobile: (max-width: $mobile-width-only);
+$screen-tablet: (min-width: $tablet-width);
+$screen-desktop: (min-width: $desktop-width);
 
 $grey: #444444;
 $grey--lighten: #ececec;

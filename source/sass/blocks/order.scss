@@ -10,7 +10,7 @@
 
   color: $text-basic;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     margin-bottom: 60px;
   }
 }

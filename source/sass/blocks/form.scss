@@ -10,7 +10,7 @@
   &--radio {
     margin-bottom: 30px;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       margin-bottom: 49px;
     }
   }
@@ -18,7 +18,7 @@
   &--checkbox {
     margin-bottom: 32px;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       margin-bottom: 66px;
       padding: 50px 0;
 
@@ -29,7 +29,7 @@
   &--fio-fields {
     margin-bottom: 35px;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       margin-bottom: 50px;
     }
   }
@@ -37,14 +37,14 @@
   &--user-data {
     margin-bottom: 17px;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       margin-bottom: 50px;
     }
   }
 }
 
 .form__fieldset-flex {
-  @media (max-width: $mobile-width-only) {
+  @media #{$screen-mobile} {
     &--user-item {
       margin-bottom: 35px;
     }
@@ -54,7 +54,7 @@
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: flex;
     align-items: baseline;
   }
@@ -69,13 +69,13 @@
   font-weight: 700;
   text-transform: uppercase;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     flex-basis: 167px;
     margin-bottom: 0;
   }
 
   &--fio {
-    @media (max-width: $mobile-width-only) {
+    @media #{$screen-mobile} {
       margin-bottom: 29px;
     }
   }
@@ -84,7 +84,7 @@
     margin-bottom: 5px;
     display: block;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       margin-bottom: 0;
     }
   }
@@ -92,7 +92,7 @@
   &--last-textarea {
     margin-bottom: 22px;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       margin-bottom: 0;
     }
   }
@@ -101,7 +101,7 @@
 .form__radio-list {
   flex-grow: 1;
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     max-width: 700px;
   }
 }
@@ -109,13 +109,13 @@
 .form__checkbox-list {
   flex-grow: 1;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 24px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
@@ -123,7 +123,7 @@
 .form__text-input-list {
   flex-grow: 1;
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     max-width: 700px;
   }
 }
@@ -135,7 +135,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     margin-bottom: 21px;
   }
 }
@@ -147,7 +147,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     margin: 0;
   }
 }
@@ -159,7 +159,7 @@
     margin-bottom: 0;
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     display: flex;
     align-items: center;
     margin-bottom: 24px;
@@ -204,7 +204,7 @@
     padding-top: 14px;
     padding-bottom: 20px;
 
-    @media (min-width: $desktop-width) {
+    @media #{$screen-desktop} {
       max-width: 700px;
     }
   }
@@ -219,7 +219,7 @@
 }
 
 .form__background {
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     background-color: $color-background-grey;
     padding: 50px 0;
     margin-bottom: 50px;
@@ -242,13 +242,13 @@
   &--fio {
     display: block;
 
-    @media (min-width: $tablet-width) {
+    @media #{$screen-tablet} {
       display: inline-block;
       margin-right: 25px;
     }
   }
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     font-size: 19px;
   }
 }
@@ -257,12 +257,12 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     flex-direction: row-reverse;
     align-items: center;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     width: 700px;
     margin-left: 167px;
   }
@@ -277,7 +277,7 @@
 }
 
 .form__button {
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     margin-right: auto;
   }
 }

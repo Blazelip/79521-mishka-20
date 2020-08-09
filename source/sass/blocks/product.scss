@@ -3,11 +3,11 @@
   flex-direction: column;
   height: 100%;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     flex-direction: row;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     flex-direction: column;
   }
 }
@@ -17,7 +17,7 @@
   outline: 3px solid rgba(black, 0.8);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
     width: 50%;
   }
 }
@@ -37,12 +37,12 @@
   outline: 3px solid rgba(yellow, 0.8);
   outline-offset: -3px;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     width: 50%;
     padding: 30px 33px 25px;
   }
 
-  @media (min-width: $desktop-width) {
+  @media #{$screen-desktop} {
     width: auto;
     padding: 26px 27px 24px;
   }
@@ -60,7 +60,7 @@
 
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(20px, 24px);
   }
 }
@@ -78,7 +78,7 @@
 
   color: $text-basic;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(15px, 30px);
   }
 }
@@ -100,7 +100,7 @@
 
   font-weight: 700;
 
-  @media (min-width: $tablet-width) {
+  @media #{$screen-tablet} {
     @include fz-lh(17px, 24px);
   }
 }
