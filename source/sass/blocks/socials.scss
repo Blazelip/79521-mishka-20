@@ -24,18 +24,33 @@
   width: 28px;
   height: 28px;
 
+  color: $black;
   background-repeat: no-repeat;
   background-position: center;
 
+  &:hover,
+  &:focus {
+    .socials__icon path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .socials__icon path {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
+
   &--ig {
-    background-image: url("../img/icon-insta.svg");
+
   }
 
   &--fb {
-    background-image: url("../img/icon-fb.svg");
+
   }
 
   &--tw {
-    background-image: url("../img/icon-twitter.svg");
+
   }
 }

@@ -3,6 +3,19 @@
   flex-direction: column;
   height: 100%;
 
+  &:hover,
+  &:focus {
+    .product__description {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  &:active {
+    .product__description {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+
   @media #{$screen-tablet} {
     flex-direction: row;
   }
@@ -14,8 +27,8 @@
 
 .product__image-link {
   display: block;
-  outline: 3px solid rgba(black, 0.8);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(black, 0.8);
+  // outline-offset: -3px;
 
   @media #{$screen-tablet} and (max-width: $tablet-width-only) {
     width: 50%;
@@ -34,8 +47,8 @@
   padding: 32px 28px 28px;
 
   border: 1px solid $section-border-color;
-  outline: 3px solid rgba(yellow, 0.8);
-  outline-offset: -3px;
+  // outline: 3px solid rgba(yellow, 0.8);
+  // outline-offset: -3px;
 
   @media #{$screen-tablet} {
     width: 50%;
@@ -69,6 +82,15 @@
   display: block;
 
   color: $text-heading;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .product__size {
@@ -106,10 +128,20 @@
 }
 
 .product__cart-button {
-  width: 20px;
-  height: 19px;
+  opacity: 0.2;
 
-  background-image: url("../img/icon-cart.svg");
-  background-repeat: no-repeat;
-  opacity: 20%;
+  color: $black;
+
+  &:hover,
+  &:focus {
+    path {
+      fill: $green;
+    }
+
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

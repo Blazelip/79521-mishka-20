@@ -55,7 +55,9 @@
   display: block;
   margin-bottom: 39px;
 
-  @media #{$screen-tablet} {
+  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
     margin-bottom: 55px;
   }
 

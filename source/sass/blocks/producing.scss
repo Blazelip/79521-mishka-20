@@ -13,6 +13,15 @@
 .producing__containter {
   border: 1px solid #ececec;
 
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+  }
+
   @media #{$screen-tablet} {
     display: grid;
     grid-template-rows: auto auto auto;
@@ -73,6 +82,7 @@
 }
 
 .producing__video {
+  position: relative;
   grid-area: video;
 
   outline: 3px solid rgba(cyan, 0.7);
@@ -81,6 +91,31 @@
 
 .producing__play-video {
   position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  width: 101px;
+  height: 77px;
+  margin: auto;
+
+  background-image: url("../img/icon-play.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &:hover,
+  &:focus {
+    width: 121px;
+    height: 92px;
+  }
+
+  &:active {
+    width: 81px;
+    height: 62px;
+
+    opacity: 0.3;
+  }
 }
 
 .producing__preview {

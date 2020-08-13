@@ -6,6 +6,8 @@
   font-weight: 700;
 
   @media #{$screen-tablet} {
+    @include fz-lh(20px, 30px);
+
     margin-bottom: 40px;
   }
 
@@ -21,14 +23,27 @@
 }
 
 .catalog-menu__item {
-  position: relative;
 
-  &:nth-child(odd) {
+  &:nth-child(odd) .catalog-menu__link {
     background-color: $green;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #59d5bc;
+      box-shadow: 0 5px 0 0 #59d5bc;
+    }
   }
 
-  &:nth-child(even) {
+  &:nth-child(even) .catalog-menu__link {
     background-color: $green--darken;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: #46c1ae;
+      box-shadow: 0 5px 0 0 #46c1ae;
+    }
   }
 
   @media #{$screen-tablet} {
@@ -37,6 +52,8 @@
 }
 
 .catalog-menu__link {
+  position: relative;
+
   display: block;
 
   padding: 24px 160px 31px 30px;
@@ -44,6 +61,15 @@
   color: $white;
 
   background-repeat: no-repeat;
+
+  &:hover,
+  &:focus,
+  &:active {
+    .catalog-menu__text {
+      display: block;
+      transform: translateY(-5px);
+    }
+  }
 
   &--interior::after {
     content: "";
@@ -55,6 +81,7 @@
     height: 62px;
     background-image: url("../img/icon-interior.svg");
     background-position: 0 0;
+    opacity: 0.5;
   }
 
   &--toy::after {
@@ -67,10 +94,35 @@
     height: 60px;
     background-image: url("../img/icon-toy.svg");
     background-position: 0 0;
+    opacity: 0.5;
+  }
+
+  &--interior:hover,
+  &--interior:focus,
+  &--toy:hover,
+  &--toy:focus {
+    &::after {
+      opacity: 0.7;
+    }
+  }
+
+  &--interior:active,
+  &--toy:active {
+    &::after {
+      opacity: 0.3;
+    }
   }
 
   @media #{$screen-tablet} {
     padding: 24px 167px 34px 30px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      display: block;
+    }
   }
 
   @media #{$screen-desktop} {
