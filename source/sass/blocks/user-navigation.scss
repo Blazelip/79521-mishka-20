@@ -11,6 +11,7 @@
 }
 
 .user-navigation__item {
+
 }
 
 
@@ -22,8 +23,29 @@
   font-weight: 700;
   border-top: 1px solid $grey--lighten;
 
-  @media #{$screen-tablet} {
-    border: 0;
+  &:hover,
+  &:focus {
+    color: rgba($text-heading, 0.6);
+
+    .user-navigation__icon {
+      opacity: 1;
+
+      path {
+        fill: $green;
+      }
+    }
+  }
+
+  &:active {
+    color: rgba($text-heading, 0.3);
+
+    .user-navigation__icon {
+      opacity: 0.3;
+
+      path {
+        fill: $green;
+      }
+    }
   }
 
   &--search {
@@ -39,6 +61,14 @@
       padding: 33px 0 32px 53px;
     }
   }
+
+  @media #{$screen-tablet} {
+    border: 0;
+  }
+}
+
+.user-navigation__icon {
+  opacity: 0.2;
 }
 
 .user-navigation__text {

@@ -7,6 +7,20 @@
   @media #{$screen-tablet} {
     padding: 0;
   }
+
+  &:hover,
+  &:focus {
+    .copyright__image path {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .copyright__image path {
+      fill: #46c1ae;
+      opacity: 0.3;
+    }
+  }
 }
 
 .copyright__text {

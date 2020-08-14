@@ -8,28 +8,40 @@
 
   @media #{$screen-desktop} {
     display: grid;
-    grid-template-columns: 380px auto auto;
+    grid-template-columns: 400px 1fr 400px;
   }
 }
 
 .main-nav__base {
   position: relative;
+
   padding: 22px 0;
 
   @media #{$screen-tablet} {
-    padding: 22px 0 20px;
-    width: 320px;
     order: 1;
+
+    width: 320px;
+    padding: 22px 0 20px;
   }
 
   @media #{$screen-desktop} {
-    width: auto;
     grid-column: 2 / 3;
+
+    width: auto;
+
+    text-align: center;
   }
 }
 
 .main-nav__logo {
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
 
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .main-nav__toggle {
@@ -52,14 +64,36 @@
 .main-nav--closed .main-nav__toggle {
   width: 20px;
   height: 14px;
-  background-image: url("../../img/icon-menu-open.svg");
+
+  background-image: url("../img/icon-menu-open.svg");
 }
 
 .main-nav--opened .main-nav__toggle {
   width: 21px;
   height: 20px;
-  background-image: url("../../img/icon-menu-close.svg");
+
+  background-image: url("../img/icon-menu-close.svg");
 }
+
+@media (max-width: $mobile-width-only) {
+  .main-nav--closed .site-navigation {
+    display: none;
+  }
+
+  .main-nav--closed .user-navigation {
+    display: none;
+  }
+
+  .main-nav--nojs .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav--nojs .site-navigation,
+  .main-nav--nojs .user-navigation {
+    display: block;
+  }
+}
+
 
 .main-nav__site-nav {
   @media #{$screen-tablet} {
@@ -75,6 +109,7 @@
 .main-nav__user-nav {
   @media #{$screen-tablet} {
     order: 2;
+
     width: 348px;
   }
 
@@ -86,9 +121,11 @@
 .main-nav__delivery {
   @include fz-lh(15px, 24px);
 
+  flex-grow: 1;
+
   margin: 0;
   padding: 20px 0;
-  flex-grow: 1;
+
   text-align: right;
 
   @media #{$screen-mobile} {

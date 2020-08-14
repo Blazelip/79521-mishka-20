@@ -39,7 +39,16 @@
 
   &--email-underline {
     color: $text-basic;
-    text-decoration: underline;
-    text-decoration-color: #62d1ba;
+    border-bottom: 1px solid #62d1ba;
+
+    &:hover,
+    &:focus {
+      color: #46c1ae;
+      border-bottom-color: #46c1ae;
+    }
+
+    &:active {
+      border-bottom-color: rgba(#46c1ae, 0.1);
+    }
   }
 }
