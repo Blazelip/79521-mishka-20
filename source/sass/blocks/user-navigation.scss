@@ -17,7 +17,7 @@
 
 .user-navigation__link {
   position: relative;
-  padding: 28px 0 26px 0;
+  padding: 28px 0 26px 46px;
   display: block;
   color: $text-heading;
   font-weight: 700;
@@ -69,6 +69,13 @@
 
 .user-navigation__icon {
   opacity: 0.2;
+
+  @media #{$screen-mobile} {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .user-navigation__text {

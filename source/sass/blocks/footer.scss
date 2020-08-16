@@ -14,11 +14,21 @@
   }
 }
 
-.footer__logo {
+.footer__logo-link {
   display: none;
 
-  outline: 2px solid rgba(tomato, 0.7);
-  outline-offset: -2px;
+  &:hover,
+  &:focus {
+    .footer__logo {
+      fill: #46c1ae;
+    }
+  }
+
+  &:active {
+    .footer__logo {
+      opacity: 0.3;
+    }
+  }
 
   @media #{$screen-tablet} {
     display: inline;
@@ -26,11 +36,9 @@
 }
 
 .footer__socials {
-  outline: 2px solid rgba(blue, 0.7);
-  outline-offset: -2px;
+
 }
 
 .footer__copyright {
-  outline: 2px solid rgba(green, 0.7);
-  outline-offset: -2px;
+
 }

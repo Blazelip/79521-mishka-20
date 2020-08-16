@@ -41,35 +41,26 @@
 }
 
 .producing__title {
+  @include fz-lh(17px, 24px);
+
   grid-area: title;
 
   position: relative;
 
-  @include fz-lh(17px, 24px);
+  display: flex;
+  align-items: center;
 
   margin: 0;
   padding: 21px 13px 26px 91px;
 
   font-weight: 700;
 
-  outline: 3px solid rgba(tomato, 0.7);
-  outline-offset: -3px;
-
-  @media #{$screen-tablet} {
-    font-size: 20px;
-    padding: 39px 40px 25px 40px;
-  }
-
-  @media #{$screen-desktop} {
-    padding: 96px 110px 27px 79px;
-  }
-
   &::before {
     content: "";
 
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 31px;
+    top: 33px;
 
     display: block;
 
@@ -79,14 +70,30 @@
     background-image: url("../img/icon-video.svg");
     background-repeat: no-repeat;
   }
+
+  @media #{$screen-tablet} {
+    font-size: 20px;
+    padding: 39px 40px 25px 107px;
+
+    &::before {
+      left: 40px;
+      top: 49px;
+    }
+  }
+
+  @media #{$screen-desktop} {
+    padding: 96px 110px 27px 79px;
+
+    &::before {
+      left: 79px;
+      top: 49px;
+    }
+  }
 }
 
 .producing__video {
   position: relative;
   grid-area: video;
-
-  outline: 3px solid rgba(cyan, 0.7);
-  outline-offset: -3px;
 }
 
 .producing__play-video {
@@ -126,9 +133,6 @@
   grid-area: info;
 
   padding: 35px 29px 32px 33px;
-
-  outline: 3px solid rgba(yellow, 0.7);
-  outline-offset: -3px;
 
   @media #{$screen-tablet} {
     padding: 0 17px 46px 40px;

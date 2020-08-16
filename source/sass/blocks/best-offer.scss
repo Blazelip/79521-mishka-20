@@ -2,24 +2,28 @@
   margin-bottom: 31px;
   padding-bottom: 36px;
 
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-position: right bottom;
+  background-size: auto 6px;
+
   @media #{$screen-tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin-bottom: 55px;
     padding-bottom: 69px;
+    background-size: auto 17px;
   }
 
   @media #{$screen-desktop} {
     margin-bottom: 68px;
     padding-bottom: 96px;
+    background-size: auto 23px;
   }
 }
 
 .best-offer__header {
   margin-bottom: 18px;
-
-  outline: 2px solid rgba(orange, 0.7);
-  outline-offset: -2px;
 
   @media #{$screen-tablet} {
     grid-column: 1 / -1;
@@ -62,9 +66,6 @@
 }
 
 .best-offer__text {
-  outline: 2px solid rgba(tomato, 0.7);
-  outline-offset: -2px;
-
   @media #{$screen-tablet} {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -101,9 +102,6 @@
 .best-offer__image-container {
   margin-bottom: 26px;
 
-  outline: 2px solid rgba(cyan, 0.7);
-  outline-offset: -2px;
-
   @media #{$screen-tablet} {
     grid-column: 2 / 3;
     grid-row: 2 / 4;
@@ -123,9 +121,6 @@
 }
 
 .best-offer__purchase {
-  outline: 2px solid rgba(black, 0.7);
-  outline-offset: -2px;
-
   @media #{$screen-tablet} {
     grid-row: 3 / 4;
 
