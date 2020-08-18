@@ -1,6 +1,6 @@
 .best-offer {
-  margin-bottom: 31px;
-  padding-bottom: 36px;
+  padding-top: 31px;
+  padding-bottom: 42px;
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
@@ -10,13 +10,13 @@
   @media #{$screen-tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 55px;
+    padding-top: 40px;
     padding-bottom: 69px;
     background-size: auto 17px;
   }
 
   @media #{$screen-desktop} {
-    margin-bottom: 68px;
+    padding-top: 54px;
     padding-bottom: 96px;
     background-size: auto 23px;
   }
