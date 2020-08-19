@@ -1,25 +1,4 @@
 .feedback {
-
-
-  // outline: 2px solid tomato;
-  // outline-offset: -2px;
-
-  // @media #{$screen-tablet} {
-
-
-
-  // }
-
-  // @media #{$screen-desktop} {
-
-
-
-  // }
-}
-
-.feedback__wrapper {
-  position: relative;
-
   padding-bottom: 51px;
 
   background-image: url("../img/bg-zigzag-line.svg");
@@ -27,14 +6,8 @@
   background-position: right bottom;
   background-size: auto 6px;
 
-  // @media #{$screen-tablet} {
-  //   padding-top: 83px;
-  //   padding-bottom: 47px;
-  // }
-
-  // @media #{$screen-desktop} {
-  //   padding: 78px 0 96px 174px;
-  // }
+  outline: 2px solid tomato;
+  outline-offset: -2px;
 
   @media #{$screen-tablet} {
     padding-top: 83px;
@@ -44,8 +17,19 @@
 
   @media #{$screen-desktop} {
     padding-top: 78px;
-    padding-left: 174px;
+    padding-bottom: 0;
+    background: none;
+  }
+}
+
+.feedback__container {
+  @media #{$screen-desktop} {
     padding-bottom: 96px;
+    padding-left: 174px;
+
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: right bottom;
     background-size: auto 23px;
   }
 }
