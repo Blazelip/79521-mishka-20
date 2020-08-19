@@ -3,9 +3,6 @@
 
   color: $text-basic;
 
-  outline: 3px solid tomato;
-  outline-offset: -3px;
-
   @media #{$screen-tablet} and (max-width: $tablet-width-only) {
     display: flex;
   }

@@ -1,13 +1,26 @@
 .contacts {
+  position: relative;
+
   padding-top: 38px;
   padding-bottom: 39px;
-
-  outline: 2px solid rgba(blue, 0.7);
-  outline-offset: -2px;
 
   @media #{$screen-tablet} {
     padding-top: 46px;
     padding-bottom: 57px;
+
+    &::before {
+      content: "";
+
+      position: absolute;
+      right: 0;
+      top: 25px;
+
+      display: block;
+      width: 47px;
+      height: 81px;
+      background-image: url("../img/icon-flag.svg");
+      background-repeat: no-repeat;
+    }
   }
 
   @media #{$screen-desktop} {
@@ -16,12 +29,15 @@
 
     padding-top: 71px;
     padding-bottom: 105px;
+
+    &::before {
+      left: 115px;
+      top: 132px;
+    }
   }
 }
 
 .contacts__title {
-  outline: 2px solid rgba(red, 0.7);
-  outline-offset: -2px;
   padding-bottom: 27px;
 
   @media #{$screen-tablet} {
@@ -50,8 +66,6 @@
 }
 
 .contacts__map {
-  outline: 2px solid rgba(cyan, 0.7);
-  outline-offset: -2px;
   display: block;
   margin-bottom: 39px;
 

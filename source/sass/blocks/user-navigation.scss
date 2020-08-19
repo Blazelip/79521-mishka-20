@@ -11,13 +11,13 @@
 }
 
 .user-navigation__item {
-
+  display: flex;
 }
 
 
 .user-navigation__link {
   position: relative;
-  padding: 28px 0 26px 0;
+  padding: 28px 0 26px 46px;
   display: block;
   color: $text-heading;
   font-weight: 700;
@@ -51,24 +51,37 @@
   &--search {
     @media #{$screen-tablet} {
       padding: 36px 31px 34px 33px;
-      border-left: 1px solid rgba(#000000, 0.1);
-      border-right: 1px solid rgba(#000000, 0.1);
+      // border-left: 1px solid rgba(#000000, 0.1);
     }
   }
 
   &--cart {
     @media #{$screen-tablet} {
-      padding: 33px 0 32px 53px;
+      padding: 33px 0 32px 31px;
+    }
+
+    .user-navigation__icon {
+      @media #{$screen-tablet} {
+        margin-right: 27px;
+      }
     }
   }
 
   @media #{$screen-tablet} {
-    border: 0;
+    border-top: 0;
+    border-left: 1px solid rgba(#000000, 0.1);
   }
 }
 
 .user-navigation__icon {
   opacity: 0.2;
+
+  @media #{$screen-mobile} {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 }
 
 .user-navigation__text {
