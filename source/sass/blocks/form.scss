@@ -44,14 +44,16 @@
 }
 
 .form__fieldset-flex {
-  @media #{$screen-mobile} {
-    &--user-item {
-      margin-bottom: 35px;
-    }
+  &--user-item {
+    margin-bottom: 35px;
 
-    &--margin-zero {
-      margin-bottom: 0;
+    @media #{$screen-tablet} {
+      margin-bottom: 24px;
     }
+  }
+
+  &--margin-zero {
+    margin-bottom: 0;
   }
 
   @media #{$screen-tablet} {
@@ -454,6 +456,14 @@
 
   transform: translateY(-50%);
   opacity: 0.2;
+
+  &--tel {
+    right: 8px;
+  }
+
+  &--mail {
+    right: 4px;
+  }
 }
 
 .form__label {

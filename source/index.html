@@ -16,7 +16,11 @@
       <nav class="main-nav main-nav--closed main-nav--nojs">
         <div class="main-nav__base">
           <a class="main-nav__logo logo">
-            <img src="img/logo-mobile.svg" width="86" height="35" alt="Логотип интернет-магазина Mishka">
+            <picture>
+              <source media="(min-width: 1150px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img src="img/logo-mobile.svg" alt="Логотип интернет-магазина Mishka">
+            </picture>
           </a>
 
           <button type="button" class="main-nav__toggle button" aria-label="Открыть меню сайта"></button>
@@ -88,41 +92,43 @@
     </section>
 
     <section class="best-offer wrapper">
-      <div class="best-offer__header">
-        <h2 class="best-offer__title title">Вязаные корзинки</h2>
-        <p class="best-offer__subtitle">Товар недели</p>
-      </div>
+      <div class="best-offer__wrapper">
+        <div class="best-offer__header">
+          <h2 class="best-offer__title title">Вязаные корзинки</h2>
+          <p class="best-offer__subtitle">Товар недели</p>
+        </div>
 
-      <div class="best-offer__text">
-        <p class="best-offer__description">
-          Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
-        </p>
+        <div class="best-offer__text">
+          <p class="best-offer__description">
+            Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
+          </p>
 
-        <table class="best-offer__features features-table">
-          <tbody>
-            <tr class="features-table__row">
-              <th class="features-table__key">Цвет:</th>
-              <td>«Тиффани»/серый</td>
-            </tr>
-            <tr class="features-table__row">
-              <th class="features-table__key">Диаметр:</th>
-              <td>25 см</td>
-            </tr>
-            <tr class="features-table__row">
-              <th class="features-table__key">Высота:</th>
-              <td>15 см</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
+          <table class="best-offer__features features-table">
+            <tbody>
+              <tr class="features-table__row">
+                <th class="features-table__key">Цвет:</th>
+                <td>«Тиффани»/серый</td>
+              </tr>
+              <tr class="features-table__row">
+                <th class="features-table__key">Диаметр:</th>
+                <td>25 см</td>
+              </tr>
+              <tr class="features-table__row">
+                <th class="features-table__key">Высота:</th>
+                <td>15 см</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
 
-      <div class="best-offer__image-container">
-        <img class="best-offer__image" src="https://source.unsplash.com/random/525x636" alt="Фотография товара" width="525" height="636">
-      </div>
+        <div class="best-offer__image-container">
+          <img class="best-offer__image" src="https://source.unsplash.com/random/525x636" alt="Фотография товара" width="525" height="636">
+        </div>
 
-      <div class="best-offer__purchase">
-        <p class="best-offer__price">Цена: 990 руб.</p>
-        <a href="#" class="best-offer__button button button--primary">Заказать</a>
+        <div class="best-offer__purchase">
+          <p class="best-offer__price">Цена: 990 руб.</p>
+          <a href="#" class="best-offer__button button button--primary">Заказать</a>
+        </div>
       </div>
     </section>
 

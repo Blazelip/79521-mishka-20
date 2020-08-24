@@ -37,6 +37,7 @@
   &--email-underline {
     color: $text-basic;
     border-bottom: 1px solid #62d1ba;
+    transition: color $short-transition, border-color $short-transition;
 
     &:hover,
     &:focus {

@@ -28,12 +28,15 @@
     grid-column: 2 / 3;
 
     width: auto;
+    padding: 9px 0 14px;
 
     text-align: center;
   }
 }
 
 .main-nav__logo {
+  transition: opacity $short-transition;
+
   &:hover,
   &:focus {
     opacity: 0.6;

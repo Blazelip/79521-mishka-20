@@ -6,12 +6,14 @@
   &:hover,
   &:focus {
     .product__description {
+      transition: box-shadow $short-transition;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
     }
   }
 
   &:active {
     .product__description {
+      transition: box-shadow $short-transition;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
     }
   }
@@ -79,6 +81,8 @@
 
   color: $text-heading;
 
+  transition: opacity $short-transition;
+
   &:hover,
   &:focus {
     opacity: 0.6;
@@ -127,6 +131,7 @@
   opacity: 0.2;
 
   color: $black;
+  transition: opacity $short-transition, fill $short-transition;
 
   &:hover,
   &:focus {

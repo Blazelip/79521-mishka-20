@@ -23,6 +23,8 @@
   font-weight: 700;
   border-top: 1px solid $grey--lighten;
 
+  transition: color $short-transition, opacity $short-transition, fill $short-transition;
+
   &:hover,
   &:focus {
     color: rgba($text-heading, 0.6);

@@ -5,4 +5,12 @@
 
   font-weight: 700;
   text-align: center;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(43px, 50px);
+  }
+
+  @media #{$screen-desktop} {
+    @include fz-lh(53px, 57px);
+  }
 }

@@ -1,18 +1,39 @@
 .title-section {
   padding: 73px 0;
-  background-color: $color-background-grey;
 
   border-top: 1px solid $grey--lighten;
 
   &--index {
     padding-bottom: 120px;
-    background-image: url("../img/hero-mobile@1x.jpg");
-    background-repeat: no-repeat;
+
+    @media #{$screen-tablet} {
+      padding-bottom: 372px;
+    }
+
+    @media #{$screen-desktop} {
+      padding-bottom: 355px;
+    }
+  }
+
+  &--others {
+    @media #{$screen-tablet} {
+      padding-bottom: 87px;
+
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-position: left bottom;
+      background-size: auto 24px;
+      border-top-color: rgba(#000000, 0.1);
+    }
+
+    @media #{$screen-desktop} {
+      padding-bottom: 113px;
+      background-size: auto 34px;
+    }
   }
 
   @media #{$screen-tablet} {
     margin-top: -64px;
     padding-top: 170px;
-    border-top-color: rgba(#000000, 0.1);
   }
 }

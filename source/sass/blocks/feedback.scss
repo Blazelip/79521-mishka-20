@@ -23,6 +23,8 @@
 }
 
 .feedback__container {
+  position: relative;
+
   @media #{$screen-desktop} {
     padding-bottom: 96px;
     padding-left: 174px;
@@ -72,6 +74,7 @@
   background-repeat: no-repeat;
   background-image: url("../img/icon-left-arrow.svg");
   background-position: center;
+  transition: opacity $short-transition;
 
   &--forward {
     transform: rotate(180deg);
