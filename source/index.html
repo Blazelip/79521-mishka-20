@@ -66,17 +66,11 @@
   </header>
 
   <main>
-    <section class="title-section title-section--index">
+    <section class="promo promo--index">
       <div class="wrapper">
-        <h1 class="main-title">Милые штуки ручной работы для дома</h1>
-      </div>
-    </section>
+        <h1 class="promo__title promo__title--index main-title">Милые штуки ручной работы для дома</h1>
 
-    <section class="catalog-menu">
-      <div class="wrapper">
-        <h2 class="visually-hidden">Каталог товаров</h2>
-
-        <ul class="catalog-menu__list list list--resetted">
+        <ul class="promo__catalog catalog-menu list list--resetted">
           <li class="catalog-menu__item">
             <a class="catalog-menu__link catalog-menu__link--interior" href="#">
               <span class="catalog-menu__text">Предметы интерьера</span>
@@ -122,7 +116,11 @@
         </div>
 
         <div class="best-offer__image-container">
-          <img class="best-offer__image" src="https://source.unsplash.com/random/525x636" alt="Фотография товара" width="525" height="636">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+            <img class="best-offer__image" src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фотография товара">
+          </picture>
         </div>
 
         <div class="best-offer__purchase">

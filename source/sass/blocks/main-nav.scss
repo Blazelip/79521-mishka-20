@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  z-index: 1;
 
   @media #{$screen-tablet} {
     display: flex;
