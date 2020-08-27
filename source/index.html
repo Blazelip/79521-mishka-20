@@ -264,6 +264,35 @@
     </div>
   </footer>
 
+  <section class="modal-cart">
+    <div class="modal-cart__wrapper">
+      <h3 class="modal-cart__title">Добавить в корзину</h2>
+
+      <form class="modal-cart__form" action="https://echo.htmlacademy.ru/" method="POST">
+        <fieldset class="modal-cart__fieldset">
+          <legend class="modal-cart__legend">Выберите размер:</legend>
+
+          <ul class="modal-cart__radio-list list list--resetted">
+            <li class="modal-cart__radio-item">
+              <input class="modal-cart__radio visually-hidden" id="size-s" name="size" value="s" type="radio">
+              <label class="modal-cart__label" for="size-s">S</label>
+            </li>
+            <li class="modal-cart__radio-item">
+              <input class="modal-cart__radio visually-hidden" id="size-m" name="size" value="m" type="radio">
+              <label class="modal-cart__label" for="size-m">M</label>
+            </li>
+            <li class="modal-cart__radio-item">
+              <input class="modal-cart__radio visually-hidden" id="size-l" name="size" value="l" type="radio">
+              <label class="modal-cart__label" for="size-l">L</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button class="modal-cart__submit button" type="submit">Добавить</button>
+      </form>
+    </div>
+  </section>
+
 <script>
   var navMain = document.querySelector('.main-nav');
   var navToggle = document.querySelector('.main-nav__toggle');
