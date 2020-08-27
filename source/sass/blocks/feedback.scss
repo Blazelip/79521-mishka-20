@@ -38,6 +38,10 @@
   position: relative;
 
   @media #{$screen-tablet} {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
     padding-top: 80px;
     padding-bottom: 49px;
   }
@@ -67,18 +71,27 @@
   margin-bottom: 14px;
 
   @media #{$screen-tablet} {
-    max-width: 70%;
-    margin-bottom: 39px;
+    order: -2;
+    width: 60%;
+    margin-bottom: 0;
   }
 
   @media #{$screen-desktop} {
-    margin-bottom: 35px;
+    // margin-bottom: 35px;
   }
 }
 
 .feedback__slider {
   @media #{$screen-mobile} {
     margin-bottom: 30px;
+  }
+
+  @media #{$screen-tablet} {
+    margin-top: 40px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-top: 39px;
   }
 }
 
@@ -89,9 +102,8 @@
   }
 
   @media #{$screen-tablet} {
-    position: absolute;
-    right: 0;
-    bottom: 38%;
+    margin-left: auto;
+    margin-top: -50px;
   }
 }
 
@@ -136,8 +148,9 @@
   }
 
   @media #{$screen-tablet} {
-    position: absolute;
-    right: 0;
-    top: 80px;
+    order: -1;
+
+    width: 35%;
+    margin-left: auto;
   }
 }
