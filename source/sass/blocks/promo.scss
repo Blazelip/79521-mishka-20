@@ -17,6 +17,9 @@
     }
 
     @media #{$screen-tablet} {
+      margin-top: -64px;
+      padding-top: 170px;
+
       background-image: url("../img/hero-tablet@1x.jpg");
 
       @media (min-resolution: 2dppx) {
@@ -37,7 +40,7 @@
 
   @media #{$screen-tablet} {
     margin-top: -64px;
-    padding-top: 170px;
+    padding-top: 37px;
 
     border-top-color: rgba(#000000, 0.1);
 
@@ -57,6 +60,8 @@
   }
 
   @media #{$screen-desktop} {
+    padding-top: 38px;
+
     &::after {
       height: 34px;
       background-size: auto 34px;
@@ -75,17 +80,18 @@
     }
 
     @media #{$screen-desktop} {
+      max-width: 700px;
       padding-bottom: 355px;
     }
   }
 
   &--others {
     @media #{$screen-tablet} {
-      padding-bottom: 63px;
+      padding-bottom: 87px;
     }
 
     @media #{$screen-desktop} {
-      padding-bottom: 79px;
+      padding-bottom: 113px;
     }
   }
 }

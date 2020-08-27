@@ -316,11 +316,6 @@
   width: 100%;
   padding: 17px 0;
 
-  @media #{$screen-tablet} {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-
   font: inherit;
   color: $input-text-color-mobile;
 
@@ -332,6 +327,10 @@
     @include fz-lh(17px, 18px);
 
     opacity: 0.3;
+
+    @media #{$screen-tablet} {
+      font-size: 19px;
+    }
   }
 
   &:hover {
@@ -412,6 +411,13 @@
     border: 2px solid $input-border-color;
 
     resize: none;
+  }
+
+  @media #{$screen-tablet} {
+    padding-left: 17px;
+    padding-right: 17px;
+
+    font-size: 19px;
   }
 }
 
@@ -572,6 +578,12 @@
   margin-bottom: 30px;
 
   color: $text-basic;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(17px, 30px);
+
+    margin-bottom: 0;
+  }
 }
 
 .form__button {

@@ -66,10 +66,8 @@
 }
 
 .contacts__map-link {
-  display: block;
   margin-bottom: 39px;
   position: relative;
-
 
   &::before {
     content: "";
@@ -85,12 +83,13 @@
     background-image: url("../img/icon-map-pin.svg");
   }
 
-  @media #{$screen-tablet} and (max-width: $tablet-width-only) {
+  @media (max-width: $tablet-width-only) {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    margin-bottom: 55px;
+  }
 
-    text-align: center;
+  @media #{$screen-tablet} {
+    margin-bottom: 55px;
   }
 
   @media #{$screen-desktop} {
@@ -102,6 +101,7 @@
 
 .contacts__map-img {
   display: block;
+  margin: 0 auto;
 }
 
 .contacts__button {
@@ -113,6 +113,8 @@
   }
 
   @media #{$screen-desktop} {
+    justify-self: start;
+    align-self: end;
     grid-column: 2 / 3;
   }
 }
