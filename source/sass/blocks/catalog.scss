@@ -9,13 +9,14 @@
 
   @media #{$screen-desktop} {
     padding-top: 111px;
-    padding-bottom: 57px;
+    padding-bottom: 27px;
   }
 }
 
 .catalog__list {
   @media #{$screen-desktop} {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -24,6 +25,10 @@
 
   &:last-child {
     margin-bottom: 0;
+
+    @media #{$screen-desktop} {
+      margin-bottom: 30px;
+    }
   }
 
   @media #{$screen-tablet} {
@@ -31,9 +36,9 @@
   }
 
   @media #{$screen-desktop} {
-    width: calc(100% / 3);
-    margin-bottom: 0;
-    margin-right: 52px;
+    width: 316px;
+    margin-bottom: 30px;
+    margin-right: 51px;
 
     &:nth-child(3n) {
       margin-right: 0;
