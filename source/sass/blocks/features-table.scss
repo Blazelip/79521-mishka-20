@@ -1,6 +1,7 @@
 .features-table {
-  @include fz-lh(15px, 24px);
+  @include fz-lh(15px, 20px);
 
+  width: 100%;
   border-collapse: collapse;
 }
 
@@ -11,4 +12,6 @@
 .features-table__key {
   text-align: left;
   font-weight: 400;
+
+  padding: 7px 30px 12px 0;
 }
