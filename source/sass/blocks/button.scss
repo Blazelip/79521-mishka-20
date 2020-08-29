@@ -25,6 +25,8 @@
 
     border: 2px solid $button-border-color;
 
+    transition: background-color $short-transition, color $short-transition;
+
     &:hover,
     &:focus {
       background-color: $grey;

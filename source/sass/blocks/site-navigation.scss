@@ -49,6 +49,7 @@
   color: $text-heading;
   font-weight: 700;
   border-top: 1px solid $grey--lighten;
+  transition: color $short-transition;
 
   &:hover,
   &:focus {

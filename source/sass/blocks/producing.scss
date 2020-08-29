@@ -29,10 +29,11 @@
       height: 263px;
 
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+      transition: box-shadow $short-transition;
 
       @media #{$screen-tablet} {
-        top: 156px;
-        height: 318px;
+        top: 454px;
+        height: 315px;
       }
 
       @media #{$screen-desktop} {
@@ -141,9 +142,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  transition: transform 0.07s;
+
   &:hover,
   &:focus {
     transform: scale(1.2);
+    outline: none;
   }
 
   &:active {
@@ -153,7 +157,7 @@
 }
 
 .producing__preview {
-
+  display: block;
 }
 
 .producing__info {

@@ -1,8 +1,16 @@
 .main-title {
   @include fz-lh(27px, 30px);
 
-  margin: 0;
+  margin: 0 auto;
 
   font-weight: 700;
   text-align: center;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(43px, 50px);
+  }
+
+  @media #{$screen-desktop} {
+    @include fz-lh(53px, 57px);
+  }
 }

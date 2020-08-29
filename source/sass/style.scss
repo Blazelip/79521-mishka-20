@@ -13,6 +13,7 @@
 @import "blocks/visually-hidden.scss";
 @import "blocks/list.scss";
 @import "blocks/button.scss";
+@import "blocks/modal-cart";
 
 // HEADER
 
@@ -25,6 +26,7 @@
 
 // MAIN -- INDEX
 
+@import "blocks/promo.scss";
 @import "blocks/title-section.scss";
 @import "blocks/main-title.scss";
 @import "blocks/catalog-menu.scss";

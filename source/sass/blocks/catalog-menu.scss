@@ -7,38 +7,12 @@
 
   @media #{$screen-tablet} {
     @include fz-lh(20px, 30px);
-    padding-bottom: 12px;
 
-    background-color: tomato;
-
-    &::after {
-      content: "";
-      position: absolute;
-
-      left: 0;
-      bottom: 0;
-
-      width: 100%;
-      height: 24px;
-      background-image: url("../img/bg-zigzag-fill.svg");
-      background-repeat: repeat-x;
-      background-size: auto 24px;
-    }
+    display: flex;
   }
 
   @media #{$screen-desktop} {
-    padding-bottom: 17px;
 
-    &::after {
-      height: 34px;
-      background-size: auto 34px;
-    }
-  }
-}
-
-.catalog-menu__list {
-  @media #{$screen-tablet} {
-    display: flex;
   }
 }
 
@@ -50,7 +24,7 @@
     &:focus,
     &:active {
       background-color: #59d5bc;
-      box-shadow: 0 5px 0 0 #59d5bc;
+      box-shadow: 0 -5px 0 0 #59d5bc;
     }
   }
 
@@ -61,7 +35,7 @@
     &:focus,
     &:active {
       background-color: #46c1ae;
-      box-shadow: 0 5px 0 0 #46c1ae;
+      box-shadow: 0 -5px 0 0 #46c1ae;
     }
   }
 
@@ -75,88 +49,50 @@
 
   display: block;
 
-  padding: 24px 160px 31px 30px;
+  padding: 23px 36px 18px 30px;
 
   color: $white;
 
-  background-repeat: no-repeat;
-
   &:hover,
-  &:focus,
-  &:active {
-    &::after {
-      transform: translateY(-55%);
-    }
+  &:focus {
+    outline: none;
 
-    .catalog-menu__text {
-      display: block;
+    .catalog-menu__content {
+      transition: transform $long-transition;
       transform: translateY(-5px);
     }
-  }
 
-  &--interior::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    right: 6%;
-    transform: translateY(-50%);
-
-    display: block;
-    width: 40px;
-    height: 62px;
-
-    background-image: url("../img/icon-interior.svg");
-    background-position: 0 0;
-    opacity: 0.5;
-
-    @media #{$screen-tablet} {
-      right: 8%;
-    }
-  }
-
-  &--toy::after {
-    content: "";
-
-    position: absolute;
-    top: 50%;
-    right: 2%;
-    transform: translateY(-50%);
-
-    display: block;
-    width: 60px;
-    height: 60px;
-
-    background-image: url("../img/icon-toy.svg");
-    background-position: 0 0;
-    opacity: 0.5;
-
-    @media #{$screen-tablet} {
-      right: 8%;
-    }
-  }
-
-  &--interior:hover,
-  &--interior:focus,
-  &--toy:hover,
-  &--toy:focus {
-    &::after {
+    .catalog-menu__icon {
       opacity: 0.7;
     }
   }
 
-  &--interior:active,
-  &--toy:active {
-    &::after {
+  &:active {
+    .catalog-menu__icon {
       opacity: 0.3;
     }
   }
 
   @media #{$screen-tablet} {
-    padding: 25px 167px 34px 37px;
+    padding: 25px 36px 39px 36px;
   }
 
   @media #{$screen-desktop} {
-    padding: 25px 350px 34px 37px;
+    padding: 25px 36px 44px 36px;
   }
+}
+
+.catalog-menu__content {
+  display: flex;
+  align-items: center;
+}
+
+.catalog-menu__text {
+  max-width: 185px;
+  margin-bottom: auto;
+}
+
+.catalog-menu__icon {
+  margin-left: auto;
+  opacity: 0.5;
 }

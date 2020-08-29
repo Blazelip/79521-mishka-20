@@ -44,14 +44,16 @@
 }
 
 .form__fieldset-flex {
-  @media #{$screen-mobile} {
-    &--user-item {
-      margin-bottom: 35px;
-    }
+  &--user-item {
+    margin-bottom: 35px;
 
-    &--margin-zero {
-      margin-bottom: 0;
+    @media #{$screen-tablet} {
+      margin-bottom: 24px;
     }
+  }
+
+  &--margin-zero {
+    margin-bottom: 0;
   }
 
   @media #{$screen-tablet} {
@@ -314,11 +316,6 @@
   width: 100%;
   padding: 17px 0;
 
-  @media #{$screen-tablet} {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-
   font: inherit;
   color: $input-text-color-mobile;
 
@@ -330,6 +327,10 @@
     @include fz-lh(17px, 18px);
 
     opacity: 0.3;
+
+    @media #{$screen-tablet} {
+      font-size: 19px;
+    }
   }
 
   &:hover {
@@ -411,6 +412,13 @@
 
     resize: none;
   }
+
+  @media #{$screen-tablet} {
+    padding-left: 17px;
+    padding-right: 17px;
+
+    font-size: 19px;
+  }
 }
 
 .form__icon-container {
@@ -454,6 +462,14 @@
 
   transform: translateY(-50%);
   opacity: 0.2;
+
+  &--tel {
+    right: 8px;
+  }
+
+  &--mail {
+    right: 4px;
+  }
 }
 
 .form__label {
@@ -562,6 +578,12 @@
   margin-bottom: 30px;
 
   color: $text-basic;
+
+  @media #{$screen-tablet} {
+    @include fz-lh(17px, 30px);
+
+    margin-bottom: 0;
+  }
 }
 
 .form__button {

@@ -1,5 +1,6 @@
 .main-nav {
   position: relative;
+  z-index: 1;
 
   @media #{$screen-tablet} {
     display: flex;
@@ -28,12 +29,15 @@
     grid-column: 2 / 3;
 
     width: auto;
+    padding: 9px 0 14px;
 
     text-align: center;
   }
 }
 
 .main-nav__logo {
+  transition: opacity $short-transition;
+
   &:hover,
   &:focus {
     opacity: 0.6;
