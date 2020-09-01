@@ -135,14 +135,14 @@
 
   &:hover,
   &:focus {
-    path {
-      fill: $green;
-    }
+    fill: $green;
 
     opacity: 1;
   }
 
   &:active {
+    fill: $green;
+
     opacity: 0.3;
   }
 }

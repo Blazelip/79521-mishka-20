@@ -10,13 +10,13 @@
 
   &:hover,
   &:focus {
-    .copyright__image path {
+    .copyright__image {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    .copyright__image path {
+    .copyright__image {
       fill: #46c1ae;
       opacity: 0.3;
     }
@@ -32,5 +32,5 @@
 }
 
 .copyright__image {
-
+  fill: $green;
 }

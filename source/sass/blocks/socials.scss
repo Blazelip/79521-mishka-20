@@ -31,27 +31,15 @@
 
   &:hover,
   &:focus {
-    .socials__icon path {
+    .socials__icon {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    .socials__icon path {
+    .socials__icon {
       fill: #46c1ae;
       opacity: 0.3;
     }
-  }
-
-  &--ig {
-
-  }
-
-  &--fb {
-
-  }
-
-  &--tw {
-
   }
 }

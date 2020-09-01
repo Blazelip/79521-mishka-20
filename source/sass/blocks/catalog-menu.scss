@@ -23,6 +23,7 @@
     &:hover,
     &:focus,
     &:active {
+      transition: transform $long-transition;
       background-color: #59d5bc;
       box-shadow: 0 -5px 0 0 #59d5bc;
     }
@@ -34,6 +35,7 @@
     &:hover,
     &:focus,
     &:active {
+      transition: transform $long-transition;
       background-color: #46c1ae;
       box-shadow: 0 -5px 0 0 #46c1ae;
     }
@@ -49,7 +51,9 @@
 
   display: block;
 
-  padding: 23px 36px 18px 30px;
+  // padding: 23px 36px 18px 30px;
+  padding-top: 23px;
+  padding-bottom: 18px;
 
   color: $white;
 
