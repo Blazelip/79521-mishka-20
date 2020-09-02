@@ -18,6 +18,10 @@
 
   padding: 22px 0;
 
+  @media #{screen-mobile} {
+    text-align: center;
+  }
+
   @media #{$screen-tablet} {
     order: 1;
 

@@ -77,6 +77,10 @@
     }
   }
 
+  @media #{$screen-mobile} {
+    z-index: 1;
+  }
+
   @media #{$screen-tablet} {
     padding: 25px 36px 39px 36px;
   }
@@ -89,10 +93,16 @@
 .catalog-menu__content {
   display: flex;
   align-items: center;
+
+  @media #{$screen-mobile} {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
 }
 
 .catalog-menu__text {
-  max-width: 185px;
+  max-width: 175px;
   margin-bottom: auto;
 }
 
