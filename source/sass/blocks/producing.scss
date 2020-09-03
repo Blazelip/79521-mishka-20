@@ -82,7 +82,7 @@
   align-items: center;
 
   margin: 0;
-  padding: 21px 13px 26px 91px;
+  padding: 19px 13px 26px 91px;
 
   font-weight: 700;
 
@@ -90,8 +90,8 @@
     content: "";
 
     position: absolute;
-    left: 31px;
-    top: 33px;
+    left: 33px;
+    top: 31px;
 
     display: block;
 
@@ -190,6 +190,8 @@
 }
 
 .producing__button {
+  width: 192px;
+
   @media #{$screen-tablet} {
     width: 584px;
   }

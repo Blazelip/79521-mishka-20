@@ -1,21 +1,32 @@
 .modal-cart {
   position: fixed;
+  // left: 0;
+  // right: 0;
+  // top: 0;
+  // bottom: 0;
   top: 50%;
   left: 50%;
   z-index: 5;
 
   display: none;
+  margin: auto;
   width: 320px;
+  // height: 500px;
 
   border: 1px solid #c6c6c6;
   background-color: $white;
   box-shadow: 0 5px 10px rgba(0, 1, 1, 0.25);
 
+  transform: translate(-50%, -50%);
+
+  &--show {
+    display: block;
+    // animation: bounce 0.6s;
+  }
+
   @media #{$screen-tablet} {
     width: 566px;
   }
-
-  transform: translate(-50%, -50%);
 }
 
 .modal-cart__wrapper {
@@ -125,5 +136,23 @@
 
   @media #{$screen-tablet} {
     width: 350px;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
   }
 }

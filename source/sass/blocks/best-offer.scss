@@ -67,6 +67,7 @@
 
   color: $green;
   font-weight: 700;
+  text-transform: uppercase;
 
   @media #{$screen-tablet} {
     flex-basis: 167px;
@@ -95,7 +96,7 @@
   @include fz-lh(15px, 24px);
 
   margin: 0;
-  margin-bottom: 28px;
+  margin-bottom: 20px;
 
   @media #{$screen-tablet} {
     @include fz-lh(17px, 30px);
@@ -117,7 +118,7 @@
 }
 
 .best-offer__image-container {
-  margin-bottom: 26px;
+  margin-bottom: 27px;
 
   @media #{$screen-tablet} {
     grid-column: 2 / 3;
@@ -154,7 +155,7 @@
   @include fz-lh(17px, 24px);
 
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
 
   font-weight: bold;
   text-align: center;

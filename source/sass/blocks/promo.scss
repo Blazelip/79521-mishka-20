@@ -8,7 +8,7 @@
     background-color: #f9f9f9;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center -21px;
     // background-size: cover;
 
     @media (min-resolution: 2dppx) {
@@ -70,7 +70,7 @@
 }
 
 .promo__title {
-  padding: 73px 0;
+  padding: 71px 0;
 
   &--index {
     padding-bottom: 120px;

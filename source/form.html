@@ -7,9 +7,9 @@
   <meta name="description" content="Какое-то описание сайта">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Вязание на заказ</title>
+  <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/opensans.woff2" as="font" crossorigin>
   <link rel="preload" href="fonts/opensansbold.woff2" as="font" crossorigin>
-  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -91,7 +91,7 @@
                   <label class="form__label form__label--radio" for="accessories">Аксессуар для интерьера</label>
                 </li>
                 <li class="form__radio-item">
-                  <input class="form__radio visually-hidden" type="radio" name="product-type" value="toys" id="toys" disabled>
+                  <input class="form__radio visually-hidden" type="radio" name="product-type" value="toys" id="toys">
                   <label class="form__label form__label--radio" for="toys">Детская игрушка</label>
                 </li>
               </ul>
@@ -102,7 +102,7 @@
         <fieldset class="form__fieldset form__fieldset--checkbox">
           <div class="wrapper">
             <div class="form__fieldset-flex">
-              <div class="form__fieldset-name">Цвет</div>
+              <div class="form__fieldset-name form__fieldset-name--checkbox">Цвет</div>
 
               <ul class="form__checkbox-list list list--resetted">
                 <li class="form__checkbox-item">
@@ -114,7 +114,7 @@
                   <label class="form__label form__label--checkbox" for="color-grey">Серый</label>
                 </li>
                 <li class="form__checkbox-item">
-                  <input class="form__checkbox visually-hidden" type="checkbox" name="color" value="tiffani" id="color-tiffani" disabled>
+                  <input class="form__checkbox visually-hidden" type="checkbox" name="color" value="tiffani" id="color-tiffani">
                   <label class="form__label form__label--checkbox" for="color-tiffani">«‎Тиффани»</label>
                 </li>
                 <li class="form__checkbox-item">
@@ -233,7 +233,7 @@
       </ul>
 
       <a class="footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive">
-        <span class="copyright__text">Разработано:</span>
+        <span class="copyright__text">Разработано</span>
         <svg class="copyright__image" role="img" width="27" height="34">
           <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
         </svg>
@@ -241,6 +241,7 @@
     </div>
   </footer>
 
+  <script src="js/script.min.js"></script>
 </body>
 
 </html>

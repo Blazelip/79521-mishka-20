@@ -1,7 +1,7 @@
 .contacts {
   position: relative;
 
-  padding-top: 38px;
+  padding-top: 36px;
   padding-bottom: 39px;
 
   @media #{$screen-tablet} {
@@ -38,6 +38,7 @@
 }
 
 .contacts__title {
+  font-size: 18px;
   padding-bottom: 27px;
 
   @media #{$screen-tablet} {
@@ -69,7 +70,7 @@
 }
 
 .contacts__map-link {
-  margin-bottom: 39px;
+  margin-bottom: 42px;
   position: relative;
 
   &::before {

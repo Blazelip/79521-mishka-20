@@ -1,5 +1,5 @@
 .catalog {
-  padding-top: 30px;
+  padding-top: 33px;
   padding-bottom: 30px;
 
   @media #{$screen-tablet} {
@@ -21,7 +21,7 @@
 }
 
 .catalog__item {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 
   &:last-child {
     margin-bottom: 0;

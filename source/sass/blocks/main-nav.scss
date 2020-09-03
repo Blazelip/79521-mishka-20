@@ -16,9 +16,9 @@
 .main-nav__base {
   position: relative;
 
-  padding: 22px 0;
+  padding: 21px 0;
 
-  @media #{screen-mobile} {
+  @media #{$screen-mobile} {
     text-align: center;
   }
 

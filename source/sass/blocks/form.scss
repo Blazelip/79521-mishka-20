@@ -8,7 +8,7 @@
   border: none;
 
   &--radio {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
 
     @media #{$screen-tablet} {
       margin-bottom: 49px;
@@ -35,7 +35,7 @@
   }
 
   &--user-data {
-    margin-bottom: 17px;
+    margin-bottom: 12px;
 
     @media #{$screen-tablet} {
       margin-bottom: 50px;
@@ -65,12 +65,16 @@
 .form__fieldset-name {
   @include fz-lh(17px, 16px);
 
-  margin-bottom: 25px;
+  margin-bottom: 33px;
 
   color: $green;
   font-weight: 700;
   text-transform: uppercase;
   white-space: nowrap;
+
+  &--checkbox {
+    margin-bottom: 24px;
+  }
 
   @media #{$screen-mobile} {
     display: flex;
@@ -81,7 +85,7 @@
 
       display: block;
 
-      margin-left: 16px;
+      margin-left: 23px;
       width: 100%;
       height: 1px;
 
@@ -96,12 +100,12 @@
 
   &--fio {
     @media #{$screen-mobile} {
-      margin-bottom: 29px;
+      margin-bottom: 28px;
     }
   }
 
   &--last {
-    margin-bottom: 5px;
+    margin-bottom: 2px;
 
     @media #{$screen-tablet} {
       margin-bottom: 0;
@@ -150,7 +154,7 @@
 }
 
 .form__radio-item {
-  margin-bottom: 18px;
+  margin-bottom: 7px;
 
   &:last-child {
     margin-bottom: 0;
@@ -162,7 +166,7 @@
 }
 
 .form__checkbox-item {
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 
   &:last-child {
     margin-bottom: 0;
@@ -314,7 +318,7 @@
   position: relative;
 
   width: 100%;
-  padding: 17px 0;
+  padding: 16px 0;
 
   font: inherit;
   color: $input-text-color-mobile;
@@ -457,7 +461,7 @@
 
 .form__input-icon {
   position: absolute;
-  right: 0;
+  right: 6px;
   top: 50%;
 
   transform: translateY(-50%);
