@@ -12,8 +12,8 @@
       content: "";
 
       position: absolute;
-      right: 0;
-      top: 25px;
+      right: 53px;
+      top: 44px;
 
       display: block;
       width: 47px;
@@ -28,18 +28,21 @@
     grid-template-columns: 175px 349px 1fr;
 
     padding-top: 71px;
-    padding-bottom: 105px;
+    padding-bottom: 101px;
 
     &::before {
-      left: 115px;
-      top: 132px;
+      left: 113px;
+      top: 128px;
     }
   }
 }
 
 .contacts__title {
-  font-size: 18px;
   padding-bottom: 27px;
+
+  @media #{$screen-mobile} {
+    font-size: 18px;
+  }
 
   @media #{$screen-tablet} {
     padding-top: 22px;
@@ -49,7 +52,7 @@
   @media #{$screen-desktop} {
     grid-column: 2 / 3;
     padding-bottom: 35px;
-    padding-top: 79px;
+    padding-top: 74px;
     padding-right: 30px;
   }
 }
@@ -58,7 +61,7 @@
   padding-bottom: 33px;
 
   @media #{$screen-tablet} {
-    padding-bottom: 49px;
+    padding-bottom: 47px;
   }
 
   @media #{$screen-desktop} {
@@ -128,8 +131,9 @@
   }
 
   @media #{$screen-desktop} {
-    margin-right: auto;
-    align-self: end;
     grid-column: 2 / 3;
+
+    width: 230px;
+    margin-right: auto;
   }
 }

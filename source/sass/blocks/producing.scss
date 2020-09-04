@@ -6,7 +6,7 @@
   }
 
   @media #{$screen-desktop} {
-    padding-bottom: 105px;
+    padding-bottom: 102px;
   }
 }
 
@@ -104,20 +104,20 @@
 
   @media #{$screen-tablet} {
     font-size: 20px;
-    padding: 39px 40px 25px 107px;
+    padding: 42px 40px 25px 107px;
 
     &::before {
       left: 40px;
-      top: 49px;
+      top: 39px;
     }
   }
 
   @media #{$screen-desktop} {
-    padding: 96px 110px 27px 79px;
+    padding: 80px 110px 10px 79px;
 
     &::before {
       left: 79px;
-      top: 49px;
+      top: 45px;
     }
   }
 }
@@ -172,7 +172,7 @@
   }
 
   @media #{$screen-desktop} {
-    padding: 0 36px 60px 79px;
+    padding: 0 36px 31px 79px;
   }
 }
 
@@ -186,6 +186,12 @@
 
   @media #{$screen-tablet} {
     @include fz-lh(15px, 30px);
+
+    margin-bottom: 39px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 50px;
   }
 }
 
@@ -197,6 +203,6 @@
   }
 
   @media #{$screen-desktop} {
-    width: auto;
+    width: 230px;
   }
 }

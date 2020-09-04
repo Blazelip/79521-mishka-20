@@ -14,4 +14,8 @@
   font-weight: 400;
 
   padding: 7px 14px 12px 0;
+
+  @media #{$screen-tablet} {
+    padding: 7px 0 12px 0;
+  }
 }

@@ -1,10 +1,15 @@
 document.addEventListener("DOMContentLoaded", function() {
 
   var navMain = document.querySelector(".main-nav");
+  console.log(navMain);
   var navToggle = navMain.querySelector(".main-nav__toggle");
+  console.log(navToggle);
   var openCart = document.querySelectorAll(".open-cart");
+  console.log(openCart);
   var popup = document.querySelector(".modal-cart");
+  console.log(popup);
   var closeCart = popup.querySelector(".close-cart");
+  console.log(closeCart);
 
   navMain.classList.remove("main-nav--nojs");
 

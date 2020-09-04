@@ -1,6 +1,15 @@
 .order {
   margin-bottom: 55px;
   padding-top: 20px;
+
+  @media #{$screen-tablet} {
+    padding-top: 55px;
+    margin-bottom: 51px;
+  }
+
+  @media #{$screen-desktop} {
+    padding-top: 99px;
+  }
 }
 
 .order__description {
@@ -12,6 +21,10 @@
   color: $text-basic;
 
   @media #{$screen-tablet} {
-    margin-bottom: 60px;
+    @include fz-lh(17px, 30px);
+
+    max-width: 700px;
+    margin: 0 auto;
+    margin-bottom: 62px;
   }
 }

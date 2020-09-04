@@ -4,13 +4,13 @@
 
   background-image: url("../img/bg-zigzag-line.svg");
   background-repeat: repeat-x;
-  background-position: right bottom;
+  background-position: left bottom;
   background-size: auto 6px;
 
   @media #{$screen-tablet} {
-    padding-top: 40px;
+    padding-top: 44px;
     padding-bottom: 69px;
-    background-size: auto 17px;
+    background-size: 771px 19px;
   }
 
   @media #{$screen-desktop} {
@@ -30,8 +30,8 @@
     padding-bottom: 96px;
     background-image: url("../img/bg-zigzag-line.svg");
     background-repeat: repeat-x;
-    background-position: right bottom;
-    background-size: auto 23px;
+    background-position: left bottom;
+    background-size: 1050px 26px;
   }
 }
 
@@ -42,13 +42,13 @@
     grid-column: 1 / -1;
     display: flex;
     align-items: center;
-    margin-bottom: 39px;
+    margin-bottom: 38px;
   }
 
   @media #{$screen-desktop} {
     grid-row: 1 / 2;
     margin-bottom: 0;
-    padding-top: 61px;
+    padding-top: 66px;
   }
 }
 
@@ -57,6 +57,7 @@
 
   @media #{$screen-tablet} {
     flex-grow: 1;
+    margin-bottom: 0;
   }
 }
 
@@ -70,12 +71,17 @@
   text-transform: uppercase;
 
   @media #{$screen-tablet} {
-    flex-basis: 167px;
+    flex-basis: 127px;
     line-height: 17px;
+    text-align: center;
   }
 
   @media #{$screen-desktop} {
+    flex-basis: 133px;
     order: -1;
+
+    margin-left: 15px;
+    margin-right: 27px;
   }
 }
 
@@ -84,11 +90,11 @@
     grid-column: 1 / 2;
     grid-row: 2 / 3;
     padding-right: 42px;
-    padding-bottom: 57px;
+    padding-bottom: 58px;
   }
 
   @media #{$screen-desktop} {
-    padding: 35px 58px 109px 167px;
+    padding: 37px 58px 113px 175px;
   }
 }
 
@@ -101,11 +107,11 @@
   @media #{$screen-tablet} {
     @include fz-lh(17px, 30px);
 
-    margin-bottom: 48px;
+    margin-bottom: 39px;
   }
 
   @media #{$screen-desktop} {
-    margin-bottom: 60px;
+    margin-bottom: 51px;
   }
 }
 
@@ -147,7 +153,7 @@
 
   @media #{$screen-desktop} {
     padding-right: 58px;
-    padding-left: 167px;
+    padding-left: 175px;
   }
 }
 

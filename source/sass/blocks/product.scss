@@ -50,7 +50,7 @@
 
   @media #{$screen-tablet} {
     width: 50%;
-    padding: 30px 33px 25px;
+    padding: 27px 33px 25px;
   }
 
   @media #{$screen-desktop} {
@@ -112,6 +112,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media #{$screen-tablet} {
+    padding-top: 23px;
+  }
+
+  @media #{$screen-desktop} {
+    padding-top: 20px;
+  }
 }
 
 .product__price {

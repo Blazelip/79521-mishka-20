@@ -19,8 +19,8 @@
     margin-bottom: 32px;
 
     @media #{$screen-tablet} {
-      margin-bottom: 66px;
-      padding: 50px 0;
+      margin-bottom: 47px;
+      padding: 48px 0;
 
       background-color: $color-background-grey;
     }
@@ -38,7 +38,11 @@
     margin-bottom: 12px;
 
     @media #{$screen-tablet} {
-      margin-bottom: 50px;
+      margin-bottom: 55px;
+    }
+
+    @media #{$screen-desktop} {
+      margin-bottom: 49px;
     }
   }
 }
@@ -58,6 +62,9 @@
 
   @media #{$screen-tablet} {
     display: flex;
+  }
+
+  @media #{$screen-desktop} {
     align-items: baseline;
   }
 }
@@ -96,6 +103,15 @@
   @media #{$screen-tablet} {
     flex-basis: 167px;
     margin-bottom: 0;
+    margin-top: 17px;
+  }
+
+  @media #{$screen-desktop} {
+    flex-basis: 162px;
+    margin-top: 21px;
+    margin-right: 12px;
+
+    text-align: center;
   }
 
   &--fio {
@@ -110,6 +126,11 @@
     @media #{$screen-tablet} {
       margin-bottom: 0;
       flex-shrink: 0;
+    }
+
+    @media #{$screen-desktop} {
+      margin-top: 17px;
+      margin-right: 12px;
     }
   }
 
@@ -136,12 +157,13 @@
   @media #{$screen-tablet} {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    row-gap: 24px;
-    column-gap: 10px;
+    row-gap: 21px;
+    column-gap: 22px;
   }
 
   @media #{$screen-desktop} {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, min-content);
+    column-gap: 99px;
   }
 }
 
@@ -187,7 +209,7 @@
   @media #{$screen-tablet} {
     display: flex;
     align-items: center;
-    margin-bottom: 24px;
+    margin-bottom: 21px;
   }
 }
 
@@ -211,16 +233,16 @@
       border-radius: 50%;
 
       @media #{$screen-tablet} {
-        left: 16px;
+        left: 18px;
         top: 16px;
 
-        width: 24px;
-        height: 24px;
+        width: 20px;
+        height: 20px;
       }
 
       @media #{$screen-desktop} {
-        left: 14px;
-        top: 14px;
+        left: 16px;
+        top: 16px;
       }
     }
   }
@@ -256,28 +278,6 @@
   }
 
   &:checked + .form__label--checkbox {
-    // &::after {
-    //   content: "";
-    //   position: absolute;
-    //   left: 9px;
-    //   top: 12px;
-
-    //   display: block;
-    //   width: 21px;
-    //   height: 16px;
-
-    //   background-image: url("../img/icon-tick.svg");
-    //   background-size: contain;
-    //   background-repeat: no-repeat;
-
-    //   @media #{$screen-tablet} {
-    //     left: 12px;
-    //     top: 16px;
-
-    //     width: 33px;
-    //     height: 22px;
-    //   }
-
     &::before {
       background-image: url("../img/icon-tick.svg");
       background-position: center;
@@ -289,7 +289,6 @@
       }
     }
   }
-
 
   &:focus + .form__label--checkbox {
     &::before {
@@ -402,6 +401,11 @@
     padding-top: 14px;
     padding-bottom: 20px;
 
+    @media #{$screen-tablet} {
+      padding-top: 14px;
+      padding-bottom: 15px;
+    }
+
     @media #{$screen-desktop} {
       max-width: 700px;
     }
@@ -434,45 +438,37 @@
     max-width: 700px;
   }
 }
-// .form__text-input--tel::after {
-//   content: "";
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   right: 0;
-//   bottom: 0;
-//   z-index: 2;
-
-//   display: block;
-
-//   width: 55px;
-//   height: 54px;
-//   background-image: url("../img/icon-play.svg");
-//   background-repeat: no-repeat;
-// }
 
 .form__background {
   @media #{$screen-tablet} {
     background-color: $color-background-grey;
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 25px;
     margin-bottom: 50px;
   }
 }
 
 .form__input-icon {
   position: absolute;
-  right: 6px;
   top: 50%;
 
   transform: translateY(-50%);
   opacity: 0.2;
 
   &--tel {
-    right: 8px;
+    right: 7px;
+
+    @media #{$screen-tablet} {
+      right: 26px;
+    }
   }
 
   &--mail {
     right: 4px;
+
+    @media #{$screen-tablet} {
+      right: 22px;
+    }
   }
 }
 
@@ -572,7 +568,7 @@
 
   @media #{$screen-desktop} {
     width: 700px;
-    margin-left: 165px;
+    margin-left: 175px;
   }
 }
 
@@ -592,6 +588,7 @@
 
 .form__button {
   @media #{$screen-tablet} {
+    width: 230px;
     margin-right: auto;
   }
 }

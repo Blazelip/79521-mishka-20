@@ -164,7 +164,7 @@
                 <label class="form__fieldset-name form__fieldset-name--last" for="tel-field">Тел</label>
                 <div class="form__icon-container">
                   <input class="form__text-input form__text-input--tel form__text-input--last" type="tel" name="phone" id="tel-field" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-                  <svg class="form__input-icon" width="25" height="24">
+                  <svg class="form__input-icon form__input-icon--tel" width="25" height="24">
                     <use xlink:href="img/sprite.svg#icon-phone"></use>
                   </svg>
                 </div>
@@ -173,7 +173,7 @@
                 <label class="form__fieldset-name form__fieldset-name--last" for="email-field">E-mail</label>
                 <div class="form__icon-container">
                   <input class="form__text-input form__text-input--mail form__text-input--last" type="email" name="email" id="email-field" placeholder="Ваш Email*" required>
-                  <svg class="form__input-icon" width="32" height="32">
+                  <svg class="form__input-icon form__input-icon--mail" width="32" height="32">
                     <use xlink:href="img/sprite.svg#icon-mail"></use>
                   </svg>
                 </div>
@@ -191,7 +191,7 @@
         <div class="wrapper">
           <div class="form__order">
             <small class="form__details">*Поля обязательны для заполнения</small>
-            <button class="form__button button button--primary" type="submit">Отправить заказ</button>
+            <button class="form__button button button--primary button--form" type="submit">Отправить заказ</button>
           </div>
         </div>
       </form>

@@ -45,9 +45,10 @@
     @media #{$screen-desktop} {
       display: block;
       font-size: 15px;
+      margin-right: 63px;
 
       .site-navigation__link {
-        padding: 20px 0;
+        padding: 24px 0;
       }
     }
   }
@@ -77,11 +78,11 @@
 
   @media #{$screen-tablet} {
     border: 0;
-    padding: 20px 0;
+    padding: 16px 0;
     min-height: auto;
   }
 
   @media #{$screen-desktop} {
-    padding: 28px 0 26px;
+    padding: 32px 0 26px;
   }
 }
