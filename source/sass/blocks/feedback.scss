@@ -1,7 +1,3 @@
-.feedback {
-
-}
-
 .feedback__wrapper {
   padding-bottom: 51px;
 
@@ -74,10 +70,6 @@
     order: -2;
     width: 60%;
     margin-bottom: 0;
-  }
-
-  @media #{$screen-desktop} {
-    // margin-bottom: 35px;
   }
 }
 

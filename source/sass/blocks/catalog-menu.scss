@@ -10,10 +10,6 @@
 
     display: flex;
   }
-
-  @media #{$screen-desktop} {
-
-  }
 }
 
 .catalog-menu__item {
@@ -50,8 +46,6 @@
   position: relative;
 
   display: block;
-
-  // padding: 23px 36px 18px 30px;
   padding-top: 23px;
   padding-bottom: 19px;
 
@@ -98,7 +92,6 @@
     max-width: 260px;
     margin: 0 auto;
   }
-
 }
 
 .catalog-menu__text {
