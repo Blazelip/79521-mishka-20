@@ -12,6 +12,7 @@
 
 .producing__containter {
   position: relative;
+
   border: 1px solid #ececec;
 
   &:hover,
@@ -29,11 +30,12 @@
       height: 263px;
 
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+
       transition: box-shadow $short-transition;
 
       @media #{$screen-tablet} {
         top: 454px;
-        height: 315px;
+        height: 285px;
       }
 
       @media #{$screen-desktop} {
@@ -41,8 +43,8 @@
         right: 0;
         left: auto;
 
-        height: 100%;
         width: 365px;
+        height: 100%;
       }
     }
   }
@@ -94,7 +96,6 @@
     top: 31px;
 
     display: block;
-
     width: 32px;
     height: 22px;
 
@@ -103,8 +104,9 @@
   }
 
   @media #{$screen-tablet} {
-    font-size: 20px;
     padding: 42px 40px 25px 107px;
+
+    font-size: 20px;
 
     &::before {
       left: 40px;
@@ -123,8 +125,9 @@
 }
 
 .producing__video {
-  position: relative;
   grid-area: video;
+
+  position: relative;
 }
 
 .producing__play-video {
@@ -146,13 +149,15 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
     outline: none;
+
+    transform: scale(1.2);
   }
 
   &:active {
-    transform: scale(0.8);
     opacity: 0.3;
+
+    transform: scale(0.8);
   }
 }
 
@@ -204,5 +209,6 @@
 
   @media #{$screen-desktop} {
     width: 230px;
+    padding: 16px 11px;
   }
 }

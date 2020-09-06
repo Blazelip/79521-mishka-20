@@ -14,7 +14,7 @@
   // Основные кнопки сайта
 
   &--primary {
-    padding: 15px 11px;
+    padding: 14px 11px;
 
     font-weight: 700;
     color: $text-heading;
@@ -27,8 +27,9 @@
 
     &:hover,
     &:focus {
-      background-color: $grey;
       color: $white;
+
+      background-color: $grey;
     }
 
     &:active {

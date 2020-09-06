@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   padding: 25px 0;
 
   @media #{$screen-tablet} {
@@ -27,6 +28,7 @@
   @include fz-lh(19px, 18px);
 
   margin-right: 27px;
+
   font-weight: 700;
   color: $text-heading;
 }

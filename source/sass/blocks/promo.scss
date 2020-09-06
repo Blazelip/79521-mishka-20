@@ -12,13 +12,14 @@
 
     &::after {
       content: "";
-      position: absolute;
 
+      position: absolute;
       left: 0;
       bottom: 0;
 
       width: 100%;
       height: 24px;
+
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: 768px 24px;
@@ -27,11 +28,12 @@
   }
 
   @media #{$screen-desktop} {
-    padding-top: 30px;
     margin-top: -66px;
+    padding-top: 28px;
 
     &::after {
       height: 34px;
+
       background-size: auto 34px;
     }
   }
@@ -41,7 +43,6 @@
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -19px;
-    // background-size: cover;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/hero-mobile@2x.jpg");
@@ -62,9 +63,11 @@
     }
 
     @media #{$screen-desktop} {
-      margin-top: -68px;
+      margin-top: -66px;
       padding-top: 86px;
+
       background-image: url("../img/hero-desktop@1x.jpg");
+      background-position: center -3px;
 
       @media (min-resolution: 2dppx) {
         background-image: url("../img/hero-desktop@2x.jpg");
@@ -86,7 +89,7 @@
 
     @media #{$screen-desktop} {
       max-width: 700px;
-      padding-bottom: 355px;
+      padding-bottom: 353px;
     }
   }
 

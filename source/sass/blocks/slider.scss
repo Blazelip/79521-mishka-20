@@ -8,8 +8,9 @@
   color: $text-basic;
 
   @media #{$screen-tablet} {
-    font-size: 17px;
     margin-bottom: 61px;
+
+    font-size: 17px;
   }
 
   @media #{$screen-desktop} {

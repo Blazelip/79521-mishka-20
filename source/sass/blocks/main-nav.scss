@@ -3,6 +3,7 @@
   z-index: 1;
 
   @media #{$screen-tablet} {
+    align-items: flex-start;
     display: flex;
     flex-wrap: wrap;
   }
@@ -26,14 +27,14 @@
     order: 1;
 
     width: 320px;
-    padding: 22px 0 20px;
+    padding: 24px 0 21px;
   }
 
   @media #{$screen-desktop} {
     grid-column: 2 / 3;
 
     width: auto;
-    padding: 9px 0 14px;
+    padding: 9px 0 0;
 
     text-align: center;
   }
@@ -54,15 +55,13 @@
 
 .main-nav__toggle {
   position: absolute;
-  z-index: 2;
-  top: 0;
-  bottom: 0;
+  top: 50%;
   right: 0;
-  left: 0;
-
-  margin: auto 0 auto auto;
+  z-index: 2;
 
   background-repeat: no-repeat;
+
+  transform: translateY(-50%);
 
   @media #{$screen-tablet} {
     display: none;
@@ -147,5 +146,7 @@
   @media #{$screen-desktop} {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+
+    padding: 9px 0 13px;
   }
 }

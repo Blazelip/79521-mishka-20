@@ -2,6 +2,7 @@
   @include fz-lh(15px, 20px);
 
   width: 100%;
+
   border-collapse: collapse;
 }
 
@@ -10,10 +11,10 @@
 }
 
 .features-table__key {
+  padding: 7px 14px 12px 0;
+
   text-align: left;
   font-weight: 400;
-
-  padding: 7px 14px 12px 0;
 
   @media #{$screen-tablet} {
     padding: 7px 0 12px 0;

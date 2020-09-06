@@ -43,7 +43,7 @@
   }
 
   @media #{$screen-desktop} {
-    padding-top: 78px;
+    padding-top: 77px;
     padding-bottom: 186px;
     padding-left: 174px;
 
@@ -56,7 +56,6 @@
         url("../img/bg-zigzag-line.svg"),
         url("../img/review@2x.jpg");
     }
-
     background-repeat: repeat-x, no-repeat;
     background-position: left bottom, 0 0;
     background-size: 1050px 26px, 350px 457px;
@@ -68,6 +67,7 @@
 
   @media #{$screen-tablet} {
     order: -2;
+
     width: 60%;
     margin-bottom: 0;
   }
@@ -99,7 +99,7 @@
   }
 
   @media #{$screen-desktop} {
-    margin-top: -46px;
+    margin-top: -45px;
     margin-left: 717px;
   }
 }
@@ -107,9 +107,11 @@
 .feedback__switcher-button {
   width: 130px;
   height: 52px;
+
   background-repeat: no-repeat;
   background-image: url("../img/icon-left-arrow.svg");
   background-position: center;
+
   transition: opacity $short-transition;
 
   &--forward {

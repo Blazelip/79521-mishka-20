@@ -20,13 +20,15 @@
 
 .footer__logo-link {
   display: none;
+
   color: $black;
 
   &:hover,
   &:focus {
     .footer__logo {
-      transition: fill $short-transition;
       fill: #46c1ae;
+
+      transition: fill $short-transition;
     }
   }
 

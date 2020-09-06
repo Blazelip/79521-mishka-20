@@ -19,18 +19,17 @@
   border-top: 1px solid $grey--lighten;
 
   @media #{$screen-tablet} {
-    display: flex;
-
     border-top: 0;
     border-left: 1px solid rgba(#000000, 0.1);
   }
 }
 
-
 .user-navigation__link {
   position: relative;
-  padding: 28px 0 26px 46px;
+
   display: block;
+  padding: 28px 0 26px 46px;
+
   color: $text-heading;
   font-weight: 700;
 
@@ -57,17 +56,17 @@
 
   &--search {
     @media #{$screen-tablet} {
-      padding: 36px 31px 34px 33px;
+      padding: 35px 32px 29px 32px;
+    }
+
+    @media #{$screen-desktop} {
+      padding: 36px 34px 28px 32px;
     }
   }
 
   &--cart {
     @media #{$screen-tablet} {
       padding: 33px 0 32px 31px;
-    }
-
-    @media #{$screen-desktop} {
-      padding: 31px 0 32px 31px;
     }
 
     .user-navigation__icon {
@@ -90,6 +89,7 @@
     position: absolute;
     left: 0;
     top: 50%;
+
     transform: translateY(-50%);
   }
 }

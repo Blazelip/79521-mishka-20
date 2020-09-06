@@ -5,6 +5,7 @@
 .form__fieldset {
   margin: 0;
   padding: 0;
+
   border: none;
 
   &--radio {
@@ -91,10 +92,9 @@
       content: "";
 
       display: block;
-
-      margin-left: 23px;
       width: 100%;
       height: 1px;
+      margin-left: 23px;
 
       background-color: #62d1ba;
     }
@@ -124,8 +124,8 @@
     margin-bottom: 2px;
 
     @media #{$screen-tablet} {
-      margin-bottom: 0;
       flex-shrink: 0;
+      margin-bottom: 0;
     }
 
     @media #{$screen-desktop} {
@@ -357,6 +357,7 @@
 
   &--tel {
     position: relative;
+
     padding-right: 40px;
 
     @media #{$screen-tablet} {
@@ -369,15 +370,16 @@
 
     &::after {
       content: "";
+
       position: absolute;
       left: 0;
       top: 0;
       z-index: 2;
 
       display: block;
-
       width: 55px;
       height: 54px;
+
       background-image: url("../img/icon-play.svg");
       background-repeat: no-repeat;
     }
@@ -414,7 +416,7 @@
   &--textarea {
     width: 100%;
     height: 142px;
-    padding: 17px;
+    padding: 15px;
 
     border: 2px solid $input-border-color;
 
@@ -430,9 +432,9 @@
 }
 
 .form__icon-container {
-  position: relative;
-
   flex-grow: 1;
+
+  position: relative;
 
   @media #{$screen-desktop} {
     max-width: 700px;
@@ -441,10 +443,12 @@
 
 .form__background {
   @media #{$screen-tablet} {
-    background-color: $color-background-grey;
+
+    margin-bottom: 50px;
     padding-top: 50px;
     padding-bottom: 25px;
-    margin-bottom: 50px;
+
+    background-color: $color-background-grey;
   }
 }
 
@@ -452,13 +456,14 @@
   position: absolute;
   top: 50%;
 
-  transform: translateY(-50%);
   opacity: 0.2;
+
+  transform: translateY(-50%);
 
   &--tel {
     right: 7px;
 
-    @media #{$screen-tablet} {
+    @media #{$screen-tablet} and (max-width: $tablet-width-only) {
       right: 26px;
     }
   }
@@ -466,7 +471,7 @@
   &--mail {
     right: 4px;
 
-    @media #{$screen-tablet} {
+    @media #{$screen-tablet} and (max-width: $tablet-width-only) {
       right: 22px;
     }
   }
@@ -476,24 +481,23 @@
   @include fz-lh(17px, 18px);
 
   position: relative;
+
   font-weight: 700;
 
   &--radio {
     display: inline-flex;
     align-items: center;
-    // padding-left: 60px;
 
     &::before {
       content: "";
 
       flex-shrink: 0;
+
       display: block;
-      // position: absolute;
-      // left: 0;
-      // top: 0;
       width: 42px;
       height: 42px;
       margin-right: 19px;
+
       border: 2px solid $grey;
       border-radius: 50%;
 
@@ -523,10 +527,12 @@
       content: "";
 
       flex-shrink: 0;
+
       display: block;
       width: 38px;
       height: 38px;
       margin-right: 23px;
+
       border: 2px solid $grey;
 
       @media #{$screen-tablet} {
@@ -575,7 +581,7 @@
 .form__details {
   @include fz-lh(14px, 16px);
 
-  margin-bottom: 30px;
+  margin-bottom: 32px;
 
   color: $text-basic;
 
