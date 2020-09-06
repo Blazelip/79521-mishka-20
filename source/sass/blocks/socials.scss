@@ -1,5 +1,5 @@
 .socials {
-  padding: 23px 0 25px;
+  padding: 25px 0 18px;
 
   text-align: center;
 
@@ -7,13 +7,14 @@
 
   @media #{$screen-tablet} {
     padding: 0;
+
     border: none;
   }
 }
 
 .socials__item {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 32px;
 
   &:last-child {
     margin-right: 0;
@@ -26,32 +27,21 @@
   height: 28px;
 
   color: $black;
+
   background-repeat: no-repeat;
   background-position: center;
 
   &:hover,
   &:focus {
-    .socials__icon path {
+    .socials__icon {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    .socials__icon path {
+    .socials__icon {
       fill: #46c1ae;
       opacity: 0.3;
     }
-  }
-
-  &--ig {
-
-  }
-
-  &--fb {
-
-  }
-
-  &--tw {
-
   }
 }

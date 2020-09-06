@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 22px 0;
+
+  padding: 25px 0;
 
   @media #{$screen-tablet} {
     padding: 0;
@@ -10,13 +11,13 @@
 
   &:hover,
   &:focus {
-    .copyright__image path {
+    .copyright__image {
       fill: #46c1ae;
     }
   }
 
   &:active {
-    .copyright__image path {
+    .copyright__image {
       fill: #46c1ae;
       opacity: 0.3;
     }
@@ -27,10 +28,11 @@
   @include fz-lh(19px, 18px);
 
   margin-right: 27px;
+
   font-weight: 700;
   color: $text-heading;
 }
 
 .copyright__image {
-
+  fill: $green;
 }

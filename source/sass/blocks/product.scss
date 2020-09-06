@@ -1,20 +1,23 @@
 .product {
   display: flex;
   flex-direction: column;
+
   height: 100%;
 
   &:hover,
   &:focus {
     .product__description {
-      transition: box-shadow $short-transition;
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+
+      transition: box-shadow $short-transition;
     }
   }
 
   &:active {
     .product__description {
-      transition: box-shadow $short-transition;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+
+      transition: box-shadow $short-transition;
     }
   }
 
@@ -44,18 +47,18 @@
   display: flex;
   flex-direction: column;
 
-  padding: 32px 28px 28px;
+  padding: 27px 28px 28px;
 
   border: 1px solid $section-border-color;
 
   @media #{$screen-tablet} {
     width: 50%;
-    padding: 30px 33px 25px;
+    padding: 27px 33px 25px;
   }
 
   @media #{$screen-desktop} {
     width: auto;
-    padding: 26px 27px 24px;
+    padding: 27px 27px 24px;
   }
 }
 
@@ -106,12 +109,22 @@
 }
 
 .product__purchase-menu {
-  margin-top: auto;
-  padding-top: 24px;
-  border-top: 1px solid $section-border-color;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  margin-top: auto;
+  padding-top: 24px;
+
+  border-top: 1px solid $section-border-color;
+
+  @media #{$screen-tablet} {
+    padding-top: 23px;
+  }
+
+  @media #{$screen-desktop} {
+    padding-top: 18px;
+  }
 }
 
 .product__price {
@@ -128,21 +141,22 @@
 }
 
 .product__cart-button {
+  color: $black;
+
   opacity: 0.2;
 
-  color: $black;
   transition: opacity $short-transition, fill $short-transition;
 
   &:hover,
   &:focus {
-    path {
-      fill: $green;
-    }
+    fill: $green;
 
     opacity: 1;
   }
 
   &:active {
+    fill: $green;
+
     opacity: 0.3;
   }
 }

@@ -1,4 +1,9 @@
 .site-navigation {
+  @media #{$screen-mobile} {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+  }
+
   @media #{$screen-tablet} {
     display: flex;
   }
@@ -11,9 +16,16 @@
 .site-navigation__item {
   @include fz-lh(17px, 24px);
 
+  border-top: 1px solid $grey--lighten;
+
+  @media #{$screen-tablet} {
+    border: 0;
+  }
+
   @media #{$screen-tablet} and (max-width: $tablet-width-only) {
-    font-size: 15px;
     margin-right: 37px;
+
+    font-size: 15px;
   }
 
   @media #{$screen-desktop} {
@@ -33,10 +45,12 @@
 
     @media #{$screen-desktop} {
       display: block;
+      margin-right: 63px;
+
       font-size: 15px;
 
       .site-navigation__link {
-        padding: 20px 0;
+        padding: 25px 0 24px;
       }
     }
   }
@@ -44,11 +58,12 @@
 
 
 .site-navigation__link {
-  padding: 28px 0 26px 46px;
   display: block;
+  padding: 28px 0 26px 46px;
+
   color: $text-heading;
   font-weight: 700;
-  border-top: 1px solid $grey--lighten;
+
   transition: color $short-transition;
 
   &:hover,
@@ -60,13 +75,19 @@
     color: rgba($text-heading, 0.3);
   }
 
+  @media #{$screen-mobile} {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+
   @media #{$screen-tablet} {
-    border: 0;
-    padding: 20px 0;
     min-height: auto;
+    padding: 16px 0;
+
+    border: 0;
   }
 
   @media #{$screen-desktop} {
-    padding: 28px 0 26px;
+    padding: 33px 0 26px;
   }
 }

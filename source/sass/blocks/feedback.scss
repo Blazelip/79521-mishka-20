@@ -1,7 +1,3 @@
-.feedback {
-
-}
-
 .feedback__wrapper {
   padding-bottom: 51px;
 
@@ -24,7 +20,7 @@
     }
     background-repeat: repeat-x, no-repeat;
     background-position: right bottom, 0 0;
-    background-size: auto 17px, 350px 457px;
+    background-size: 768px 19px, 350px 457px;
   }
 
   @media #{$screen-desktop} {
@@ -47,7 +43,7 @@
   }
 
   @media #{$screen-desktop} {
-    padding-top: 78px;
+    padding-top: 77px;
     padding-bottom: 186px;
     padding-left: 174px;
 
@@ -60,10 +56,9 @@
         url("../img/bg-zigzag-line.svg"),
         url("../img/review@2x.jpg");
     }
-
     background-repeat: repeat-x, no-repeat;
-    background-position: right bottom, 0 0;
-    background-size: auto 23px, 350px 457px;
+    background-position: left bottom, 0 0;
+    background-size: 1050px 26px, 350px 457px;
   }
 }
 
@@ -72,26 +67,23 @@
 
   @media #{$screen-tablet} {
     order: -2;
+
     width: 60%;
     margin-bottom: 0;
-  }
-
-  @media #{$screen-desktop} {
-    // margin-bottom: 35px;
   }
 }
 
 .feedback__slider {
   @media #{$screen-mobile} {
-    margin-bottom: 30px;
+    margin-bottom: 27px;
   }
 
   @media #{$screen-tablet} {
-    margin-top: 40px;
+    margin-top: 37px;
   }
 
   @media #{$screen-desktop} {
-    margin-top: 39px;
+    margin-top: 36px;
   }
 }
 
@@ -102,17 +94,24 @@
   }
 
   @media #{$screen-tablet} {
-    margin-left: auto;
-    margin-top: -50px;
+    margin-left: 510px;
+    margin-top: -43px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-top: -45px;
+    margin-left: 717px;
   }
 }
 
 .feedback__switcher-button {
   width: 130px;
   height: 52px;
+
   background-repeat: no-repeat;
   background-image: url("../img/icon-left-arrow.svg");
   background-position: center;
+
   transition: opacity $short-transition;
 
   &--forward {
@@ -150,7 +149,11 @@
   @media #{$screen-tablet} {
     order: -1;
 
-    width: 35%;
+    width: 26.3%;
     margin-left: auto;
+  }
+
+  @media #{$screen-desktop} {
+    width: 20%;
   }
 }

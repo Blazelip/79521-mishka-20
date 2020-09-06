@@ -2,7 +2,11 @@
   background-color: $color-background-grey;
 
   @media #{$screen-tablet} {
-    padding: 51px 0 58px;
+    padding: 50px 0 55px;
+  }
+
+  @media #{$screen-desktop} {
+    padding: 50px 0 55px;
   }
 }
 
@@ -16,13 +20,15 @@
 
 .footer__logo-link {
   display: none;
+
   color: $black;
 
   &:hover,
   &:focus {
     .footer__logo {
-      transition: fill $short-transition;
       fill: #46c1ae;
+
+      transition: fill $short-transition;
     }
   }
 
@@ -35,12 +41,4 @@
   @media #{$screen-tablet} {
     display: inline;
   }
-}
-
-.footer__socials {
-
-}
-
-.footer__copyright {
-
 }

@@ -6,12 +6,13 @@
   }
 
   @media #{$screen-desktop} {
-    padding-bottom: 105px;
+    padding-bottom: 102px;
   }
 }
 
 .producing__containter {
   position: relative;
+
   border: 1px solid #ececec;
 
   &:hover,
@@ -29,11 +30,12 @@
       height: 263px;
 
       box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+
       transition: box-shadow $short-transition;
 
       @media #{$screen-tablet} {
         top: 454px;
-        height: 315px;
+        height: 285px;
       }
 
       @media #{$screen-desktop} {
@@ -41,8 +43,8 @@
         right: 0;
         left: auto;
 
-        height: 100%;
         width: 365px;
+        height: 100%;
       }
     }
   }
@@ -82,7 +84,7 @@
   align-items: center;
 
   margin: 0;
-  padding: 21px 13px 26px 91px;
+  padding: 19px 13px 26px 91px;
 
   font-weight: 700;
 
@@ -90,11 +92,10 @@
     content: "";
 
     position: absolute;
-    left: 31px;
-    top: 33px;
+    left: 33px;
+    top: 31px;
 
     display: block;
-
     width: 32px;
     height: 22px;
 
@@ -103,28 +104,30 @@
   }
 
   @media #{$screen-tablet} {
+    padding: 42px 40px 25px 107px;
+
     font-size: 20px;
-    padding: 39px 40px 25px 107px;
 
     &::before {
       left: 40px;
-      top: 49px;
+      top: 39px;
     }
   }
 
   @media #{$screen-desktop} {
-    padding: 96px 110px 27px 79px;
+    padding: 80px 110px 10px 79px;
 
     &::before {
       left: 79px;
-      top: 49px;
+      top: 45px;
     }
   }
 }
 
 .producing__video {
-  position: relative;
   grid-area: video;
+
+  position: relative;
 }
 
 .producing__play-video {
@@ -146,13 +149,15 @@
 
   &:hover,
   &:focus {
-    transform: scale(1.2);
     outline: none;
+
+    transform: scale(1.2);
   }
 
   &:active {
-    transform: scale(0.8);
     opacity: 0.3;
+
+    transform: scale(0.8);
   }
 }
 
@@ -172,7 +177,7 @@
   }
 
   @media #{$screen-desktop} {
-    padding: 0 36px 60px 79px;
+    padding: 0 36px 31px 79px;
   }
 }
 
@@ -186,15 +191,24 @@
 
   @media #{$screen-tablet} {
     @include fz-lh(15px, 30px);
+
+    margin-bottom: 39px;
+  }
+
+  @media #{$screen-desktop} {
+    margin-bottom: 50px;
   }
 }
 
 .producing__button {
+  width: 192px;
+
   @media #{$screen-tablet} {
     width: 584px;
   }
 
   @media #{$screen-desktop} {
-    width: auto;
+    width: 230px;
+    padding: 16px 11px;
   }
 }

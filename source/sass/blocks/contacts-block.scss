@@ -15,7 +15,7 @@
 
 .contacts-block__row {
   display: flex;
-  margin-bottom: 32px;
+  margin-bottom: 29px;
 
   &:last-child {
     margin-bottom: 0;
@@ -33,7 +33,7 @@
 
 .contacts-block__key {
   margin: 0;
-  padding-right: 29px;
+  padding-right: 30px;
 
   @media #{$screen-tablet} {
     padding-right: 25px;
@@ -45,12 +45,15 @@
 
   &--email-underline {
     color: $text-basic;
+
     border-bottom: 1px solid #62d1ba;
+
     transition: color $short-transition, border-color $short-transition;
 
     &:hover,
     &:focus {
       color: #46c1ae;
+
       border-bottom-color: #46c1ae;
     }
 

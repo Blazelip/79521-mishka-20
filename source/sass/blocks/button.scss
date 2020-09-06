@@ -14,9 +14,7 @@
   // Основные кнопки сайта
 
   &--primary {
-    @include fz-lh(18px, 20px);
-
-    padding: 16px 11px;
+    padding: 14px 11px;
 
     font-weight: 700;
     color: $text-heading;
@@ -29,12 +27,33 @@
 
     &:hover,
     &:focus {
-      background-color: $grey;
       color: $white;
+
+      background-color: $grey;
     }
 
     &:active {
       color: rgba($white, 0.3);
     }
+  }
+
+  &--index {
+    @include fz-lh(18px, 20px);
+
+    @media #{$screen-tablet} {
+      font-size: 17px;
+    }
+  }
+
+  &--catalog {
+    @include fz-lh(18px, 16px);
+
+    @media #{$screen-tablet} {
+      font-size: 17px;
+    }
+  }
+
+  &--form {
+    @include fz-lh(17px, 16px);
   }
 }
