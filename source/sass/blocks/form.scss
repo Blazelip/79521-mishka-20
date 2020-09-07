@@ -361,7 +361,7 @@
     padding-right: 40px;
 
     @media #{$screen-tablet} {
-      padding-right: 55px;
+      padding-right: 60px;
     }
 
     @media #{$screen-desktop} {
@@ -389,7 +389,7 @@
     padding-right: 40px;
 
     @media #{$screen-tablet} {
-      padding-right: 55px;
+      padding-right: 60px;
     }
 
     @media #{$screen-desktop} {
@@ -425,7 +425,6 @@
 
   @media #{$screen-tablet} {
     padding-left: 17px;
-    padding-right: 17px;
 
     font-size: 19px;
   }
