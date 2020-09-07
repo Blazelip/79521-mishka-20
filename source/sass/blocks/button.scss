@@ -28,7 +28,7 @@
     &:hover,
     &:focus {
       color: $white;
-
+      outline: none;
       background-color: $grey;
     }
 
