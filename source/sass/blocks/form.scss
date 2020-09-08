@@ -253,12 +253,6 @@
     }
   }
 
-  &:active + .form__label--radio {
-    &::before {
-      border-color: rgba($grey, 0.3);
-    }
-  }
-
   &:disabled + .form__label--radio {
     color: rgba($grey, 0.3);
 
@@ -293,12 +287,6 @@
   &:focus + .form__label--checkbox {
     &::before {
       border-color: #62d1ba;
-    }
-  }
-
-  &:active + .form__label--checkbox {
-    &::before {
-      border-color: rgba($grey, 0.3);
     }
   }
 
@@ -516,6 +504,12 @@
         border-color: #62d1ba;
       }
     }
+
+    &:active {
+      &::before {
+        border-color: rgba($grey, 0.3);
+      }
+    }
   }
 
   &--checkbox {
@@ -544,6 +538,12 @@
     &:hover {
       &::before {
         border-color: #62d1ba;
+      }
+    }
+
+    &:active {
+      &::before {
+        border-color: rgba($grey, 0.3);
       }
     }
   }
